@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-15, 22:06:06
+    Author     : Arek
+*/
+@mixin small-box($color)
+{
+    .small-box-#{$color}
+    {
+        @extend %small-box;
+        color: $color;
+    }
+}
+@mixin generateRow($number-of-items, $margin)
+{
+     width: ((100% - ($margin * ($number-of-items - 1)))/ $number-of-items);
+     margin-right: $margin;
+     margin-bottom: $margin;
+ 
+     &:nth-child(#{$number-of-items}n)
+     {
+         margin-right: 0;
+     }
+}
+
+@mixin horizontalGradient($startColor: $color-white, $endColor: $color-red) 
+{
+    background-color: $endColor;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColor), to($endColor));
+    background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+    background-image: -moz-linear-gradient(left, $startColor, $endColor);
+    background-image: -ms-linear-gradient(left, $startColor, $endColor);
+    background-image: -o-linear-gradient(left, $startColor, $endColor);
+    background-image: linear-gradient(left, $startColor, $endColor);
+    background-repeat: repeat-x;
+}

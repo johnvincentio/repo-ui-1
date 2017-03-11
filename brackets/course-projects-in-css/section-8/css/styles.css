@@ -1,0 +1,124 @@
+/* line 9, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+body {
+  background-color: #f5f3ef;
+  color: #666;
+  font-family: "Arial", sans-serif;
+  line-height: 1.5em;
+}
+
+/* line 22, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+ul,
+li {
+  list-style: none;
+}
+
+/* line 26, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+header {
+  background-color: #1f2c36;
+  color: #fff;
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+/* line 32, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+header .logo {
+  padding-top: 20px;
+}
+
+/* line 37, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+.container {
+  margin: auto;
+  max-width: 960px;
+  overflow: auto;
+  width: 80%;
+}
+
+/* line 44, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+section {
+  float: right;
+  width: 80%;
+  padding: 20px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/* line 52, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+section .gallery img {
+  width: 23%;
+  opacity: 1;
+  transition: all 1s;
+}
+
+/* line 57, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+section .gallery img:hover {
+  background-color: #fff;
+  opacity: .5;
+  transition: all 1s;
+}
+
+/* line 66, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+aside {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/* line 74, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+aside nav a {
+  color: #1f2c36;
+  text-decoration: none;
+  line-height: 2.2em;
+  padding: 10px 20px;
+}
+
+/* line 80, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+aside nav a:active {
+  background-color: #1f2c36;
+  color: #fff;
+}
+
+/* line 85, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+aside nav a:hover {
+  background-color: #ccc;
+}
+
+/* line 92, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+footer {
+  background-color: #1f2c36;
+  color: #fff;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* line 101, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+  .container {
+    width: 95%;
+  }
+  /* line 106, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+  section,
+  aside {
+    float: none;
+    width: 100%;
+  }
+  /* line 111, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+  section nav a,
+  aside nav a {
+    padding: 5px 10px;
+  }
+  /* line 117, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-8/scss/styles.scss */
+  section .gallery img {
+    width: 49%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

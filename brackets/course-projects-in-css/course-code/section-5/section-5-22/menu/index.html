@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Dropdown Menu</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#menu-wrap').prepend('<div id="menu-trigger">Menu</div>');
+			$('#menu-trigger').on('click', function(){
+				$('#menu').slideToggle();
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav id="menu-wrap">
+		<ul id="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li>
+				<a href="#">Services</a>
+				<ul>
+					<li><a href="#">Web Design</a>
+						<ul>
+							<li><a href="#">HTML/CSS</a></li>
+							<li><a href="#">Flash</a></li>
+							<li><a href="#">Graphic Design</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Web Programming</a>
+						<ul>
+							<li><a href="#">PHP</a></li>
+							<li><a href="#">Ruby on Rails</a></li>
+							<li><a href="#">Python</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Web Hosting</a></li>
+					<li><a href="#">SEO</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Projects</a>
+				<ul>
+					<li><a href="#">Project 1</a></li>
+					<li><a href="#">Project 2</a></li>
+					<li><a href="#">Project 3</a></li>
+					<li><a href="#">Project 4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

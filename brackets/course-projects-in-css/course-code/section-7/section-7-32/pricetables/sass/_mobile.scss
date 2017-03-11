@@ -1,0 +1,22 @@
+#container{
+	width:80%;
+}
+
+.tbl-block{
+	float:none;
+	width:100%;
+}
+
+.tbl-block:hover{
+	border:0;
+}
+
+.highlight{
+	height:auto;
+	margin-top:0;
+	border:0;
+	
+	a.btn{
+		margin-top:0;
+	}
+}

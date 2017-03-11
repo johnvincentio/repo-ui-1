@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title>Height Tests</title>
+
+        <style>
+            .h-1 {
+                min-height: 100px;
+                background-color: yellow;
+                border: 5px solid #ccc;
+                height: 300px;
+            }
+            .h-2 {
+                min-height: 100px;    /* overrides height */
+                background-color: orange;
+                border: 5px solid #ccc;
+                height: 20px;
+            }
+            .w-1 {
+                min-width: 400px;
+                background-color: yellow;
+                border: 5px solid #ccc;
+                width: 500px;
+            }
+            .w-2 {
+                min-width: 400px;    /* overrides height */
+                background-color: orange;
+                border: 5px solid #ccc;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="h-1">Height &gt; min-height = 300px</p>
+        <p class="h-2">Height is min-height = 100px</p>
+        <p class="w-1">Width &gt; min-width = 500px</p>
+        <p class="w-2">Width is min-width = 400px</p>
+    </body>
+</html>

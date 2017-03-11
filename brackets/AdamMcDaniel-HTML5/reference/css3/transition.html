@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Transition Property - HTML5.array.org</title>
+    <!--[if lt IE 9]>
+    <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+    <base href='../../'>
+    <script src='highlight.min.js'></script>
+    <link rel="stylesheet" href='highlight.min.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='base.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width: 500px)' href='mobile.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class='content'>
+    <header>
+      <nav>
+        <a href='index.html'>Home</a>
+        <a href='tutorials/'>Tutorials</a>
+        <a href='demos/'>Demos</a>
+        <a href='vb/'>Visual&nbsp;Blueprint&trade;</a>
+      </nav>
+      <h1>HTML5.array.org</h1>
+    </header>
+    <section id='articles'>
+      <h2>CSS Reference</h2>
+      <article class='reference'>
+        <hgroup>
+          <h3>Transition Property</h3>
+          <h4>Synopsis</h4>
+        </hgroup>
+        <pre><code>&lt;style&gt;
+  <i>selector</i> {
+    transition: <i>property</i>, <i>duration</i>, <i>timing</i>, <i>delay</i>;
+    <i>property</i>: <i>value1</i>;
+  }
+  <i>selector</i>:hover {
+    <i>property</i>: <i>value2</i>;
+  }
+&lt;/style&gt;
+</code></pre>
+        <h4>Description</h4>
+        <p>
+          Transitions are a very easy way to create simple morphing
+          animations of an object as it changes from one style into
+          another, using nothing but CSS rules. To do this, you must define
+          a starting and ending selector that the target object will be
+          matched with. For mouse-based animations, often the two selector
+          will identify the same HTML object, except the second will simply
+          append the :hover pseudo-class.
+        </p>
+        <h4>Example</h4>
+        <style>
+          article.example {
+            margin: 30px 0px;
+          }
+          article.example div {
+            left: 100px;
+            display: inline-block;
+            height: 100px;
+            border: 1px solid black;
+            margin-left: 3%;
+            box-shadow: 3px 3px 10px 0px black;
+            background-color: white;
+          }
+          article.example div p {
+            text-align: center;
+            margin: 30px 0;
+          }
+          div.transition {
+            transition-property: width, border-radius, transform;
+            transition-duration: 1s;
+            -moz-transition-property: width, border-radius, transform;
+            -moz-transition-duration: 1s;
+            -webkit-transition-property: width, border-radius, transform;
+            -webkit-transition-duration: 1s;
+            width: 100px;
+            border-radius: 0;
+            transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+          }
+          div.transition:hover {
+            width: 300px;
+            border-radius: 30px;
+            transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -webkit-transform: rotate(30deg);
+          }
+        </style>
+        <article class='example'>
+          <div class='transition'>
+            <p>Transitioning<br>Object</p>
+          </div>
+        </article>
+      </article>
+    </section>
+    <footer>
+      &copy;2011 Adam McDaniel
+    </footer>
+    </div>
+  </body>
+</html>

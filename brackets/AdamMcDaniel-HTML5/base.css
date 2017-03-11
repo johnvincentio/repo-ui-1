@@ -1,0 +1,226 @@
+body {
+  color: #222;
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+header, footer, nav, section, article, figure, figcaption, aside {
+  display: block;
+}
+a {
+  color: #3d5c9d;
+  text-decoration: none;
+}
+div.content {
+  background-color: white;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+}
+header {
+  background-image: url('images/terra_bg.png');
+  background-attachment: fixed;
+  border: 1px solid black;
+  height: 55px;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 30px;
+}
+header nav {
+  float: right;
+}
+header nav a {
+  margin: 10px;
+  font-weight: bold;
+  color: white;
+}
+/* Join articles and sidebar sections with a background image */
+section#sidebar {
+  float: right;
+  width: 20%;
+  background-image: url('images/terra_bg.png');
+  background-attachment: fixed;
+  color: white;
+  margin: 2px 0 5px 5px;
+}
+section#articles h2, section#sidebar h2 {
+  background-image: url('images/terra_bg.png');
+  background-attachment: fixed;
+  color: white;
+  margin: 0px;
+  padding: 2px 5px;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+section#articles h2 {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+section#sidebar h2 {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 1px 0 0;
+}
+section#sidebar ul {
+  border-style: solid;
+  border-color: black;
+  border-width: 0 1px 1px 1px;
+  margin: 0px;
+  font-size: 0.8em;
+  list-style: none;
+  padding-left: 20px;
+}
+section#sidebar ul li {
+  margin-bottom: 5px;
+}
+section#articles {
+  margin: 2px 0;
+}
+section#articles > article {
+  border: 1px solid #CDB380;
+  margin: 10px;
+  clear: left;
+  background-color: #E8DDCB;
+}
+section#articles > article > * {
+  padding: 2px 5px;
+}
+section#articles > article hgroup, section#articles > article pre {
+  padding: 0;
+}
+section#articles > article hgroup * {
+  padding: 2px 5px;
+}
+section#articles article h3 {
+  margin: 0;
+  background-color: #033664;
+  color: white;
+}
+section#articles article h4 {
+  margin: 0;
+  background-color: #CDB380;
+  color: #222;
+}
+
+section#articles article h5 {
+  margin: 0;
+  background-color: #36818a;
+  color: white;
+}
+/* The demos class has an H5 level, so redefine its colors slightly */
+section#articles article.demos h4 {
+  background-color: #36818a;
+  color: white;
+}
+section#articles article.demos h5 {
+  background-color: #CDB380;
+  color: #222;
+}
+
+section#articles article p {
+  padding: 0 5px;
+  font-size: 0.9em;
+}
+section#articles article ul {
+  padding: 0 0 0 1.5em;
+  font-size: 0.9em;
+}
+article hgroup {
+  padding: 0;
+  color: white;
+}
+article hgroup * {
+  margin: 0;
+  padding: 0;
+}
+aside {
+  border: 1px solid;
+  max-width: 20%;
+  float: right;
+  margin: 0px 10px;
+}
+figure.html5logo {
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  float: left;
+}
+pre code {
+  margin: 10px 20px;
+  font-family: "Courier", monospace;
+  font-size: 0.9em;
+  padding: 0;
+  background: none;
+  overflow: auto;
+  width: 690px;
+}
+pre .value {
+  font-style: italic;
+}
+pre .attribute {
+  color: #228;
+}
+div.copyright {
+  float: left;
+}
+div.html5badge {
+  float: right;
+}
+footer {
+  font-size: 0.5em;
+}
+footer div.clear {
+  clear: both;
+}
+meter {
+    width: 200px;
+    height: 20px;
+} 
+.reference figure {
+  border: 1px solid black;
+  width: 128px;
+}
+.reference figure, .reference figcaption {
+  padding: 5px;
+}
+.reference figcaption {
+  font-size: 0.9em;
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid gray;
+}
+::selection {
+  color: white;
+  background-color: #3d5c9d;
+}
+::-moz-selection {
+  color: white;
+  background-color: #3d5c9d;
+}
+.bold {
+  font-weight: bold;
+}
+.fake-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #00F;
+}
+/* Avoid highlight.min.css from lowering the opacity of javascript embedded in
+ * HTML in the example code blocks */
+pre .html .javascript {
+  opacity: 1;
+}
+.faded {
+  opacity: 0.2;
+}

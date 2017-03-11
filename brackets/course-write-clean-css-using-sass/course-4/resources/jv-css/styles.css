@@ -1,0 +1,75 @@
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  background-color: green;
+  color: #fff;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: blue;
+}
+nav li {
+  display: block;
+  float: left;
+}
+nav li li {
+  display: none;
+  float: none;
+}
+nav li li a:hover {
+  background-color: red;
+}
+nav li:hover li {
+  display: block;
+}
+
+#header {
+  height: 150px;
+}
+
+h1 {
+  color: yellow;
+  font-size: 28px;
+}
+
+h2 {
+  color: yellow;
+  font-size: 21px;
+}
+
+/*# sourceMappingURL=styles.css.map */

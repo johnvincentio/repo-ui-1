@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <title>CSS Inheritance Property</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+.parent h3 {
+    font-variant: small-caps;
+    color: red;
+}
+
+.parent p {
+    text-indent: 1em;
+    color: blue;
+}
+
+.parent button {
+    padding: 1em 2em;
+    background-color: gray;
+    color: white;
+    border-radius: 0.5em;
+    border: 0.1em solid gray;
+}
+
+.child2 p {						/* declined inherited attributes from parent */
+    text-indent: inherit;
+    color: inherit;
+}
+
+.child2 h3 {					/* declined inherited attributes from parent */
+    font-variant: inherit;
+    color: inherit;
+}
+
+.child2 button {				/* declined inherited attributes from parent */
+    background-color: inherit;
+    color: inherit;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- HTML SECTION -->
+
+<div class="parent">
+
+    <div class="child1">
+        <h3>A title here</h3>
+        <p>A paragraph text here</p>
+        <button>A button here</button>
+    </div><!-- end child1 element -->
+
+    <div class="child2">
+        <h3>A title here</h3>
+        <p>A paragraph text here</p>
+        <button>A button here</button>
+    </div><!-- end child2 element -->
+
+</div><!-- end parent element -->
+
+</body>
+
+</html>

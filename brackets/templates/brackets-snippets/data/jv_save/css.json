@@ -1,0 +1,9 @@
+[
+    {
+        "name": “jv_css”,
+        "trigger": “jv_css”,
+        "usage": “jv_css”,
+        "description": "Create Basic CSS,
+        "template": “jv_css.snippet"
+    }
+]

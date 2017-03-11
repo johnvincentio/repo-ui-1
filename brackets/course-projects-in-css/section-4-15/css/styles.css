@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background:#465c8f url(img/bg-image.jpg) repeat-x;
+/*
+    background: -webkit-linear-gradient(#565390, #417fa0);
+    background: linear-gradient(#565390, #417fa0);
+*/
+}
+
+#container {
+    width: 718px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 20px 10px;
+}
+
+ul.thumbs li {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 9px;
+}
+
+ul.thumbs a {
+    display: block;
+    position: relative;
+    width: 85px;
+    height: 55px;
+    border: 4px solid transparent;
+    font: bold 12px/25px Arial, san-serif;    /* font size / line height */
+    color: #515151;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.25), inset 1px 1px 0px rgba(0,0,0,0.15);
+}
+
+ul.thumbs img {
+    border: 4px solid #333;
+}
+
+ul.slides {
+    overflow: hidden;
+    clear: both;
+    border: 4px solid #333;
+}
+
+ul.slides,
+ul.slides li,
+ul.slides a,
+ul.slides img {
+    width: 705px;
+    height: 350px;
+    position: relative;
+}
+
+ul.slides li {
+    position: absolute;
+    z-index: 50;
+}
+
+ul.thumbs li a:hover span {
+    position: absolute;
+    z-index: 101;
+    bottom: -30px;
+    left: -22px;
+    display: block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
+    background: #fff;    /* older browsers */
+    background: -webkit-linear-gradient(top, #fff 0%, #bcbcbc 100%);
+    background: linear-gradient(top, #fff 0%, #bcbcbc 100%);
+}
+
+ul.thumbs li a:hover span:before {
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 44px;
+}
+
+ul.thumbs li:first-child a:hover span {
+    left: -3px;
+}
+
+ul.thumbs li:first-child a:hover span:before {
+    left: 25px;
+}
+
+/* Animation for the slider */
+
+@-webkit-keyframes 'slide' {
+    0% {left: -500px;}
+    100% {left: 0;}
+}
+
+@keyframes 'slide' {
+    0% {left: -500px;}
+    100% {left: 0;}
+}
+
+ul.slides li:target {
+    z-index: 100;
+    -webkit-animation-name: slide;
+    animation-name: slide;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/* Not target */
+
+@-webkit-keyframes 'noTarget' {
+    0% {z-index: 75;}
+    100% {z-index: 75;}
+}
+
+@keyframes 'noTarget' {
+    0% {z-index: 75;}
+    100% {z-index: 75;}
+}
+
+ul.slides li:not(:target) {
+    -webkit-animation-name: noTarget;
+    animation-name: noTarget;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}

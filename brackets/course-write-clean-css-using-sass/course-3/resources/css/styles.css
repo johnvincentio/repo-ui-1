@@ -1,0 +1,78 @@
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+/* line 5, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/_setup.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/_setup.scss */
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* line 23, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/_setup.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 24, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/_setup.scss */
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 5, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav ul {
+  list-style-type: none;
+}
+
+/* line 9, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav a {
+  background-color: green;
+  color: #fff;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav a:hover {
+  color: blue;
+}
+
+/* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav li {
+  display: block;
+  float: left;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav li li {
+  display: none;
+  float: none;
+}
+
+/* line 29, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav li li a:hover {
+  background-color: red;
+}
+
+/* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-3/resources/scss/styles.scss */
+nav li:hover li {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */

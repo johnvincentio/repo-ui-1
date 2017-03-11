@@ -1,0 +1,9 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+.food, .sleep {
+  background-color: orange;
+  font-weight: bold;
+}

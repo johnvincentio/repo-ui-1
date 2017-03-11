@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title>Radial Gradients</title>
+
+        <style>
+            div {
+                width: 500px;
+                height: 200px;
+                border: 2px solid #ddd;
+                margin: 20px;
+            }
+
+/* background: radial-gradient(shape size at position, start-color, ..., last-color); */
+
+            .grad-1 {
+                background-color: red;    /* for older browsers */
+                background: radial-gradient(red, yellow, green);
+            }
+            .grad-2 {
+                background: radial-gradient(red 5%, yellow 15%, green 60%);
+            }
+            .grad-3 {
+                background: radial-gradient(circle, red, yellow, green);
+            }
+            .grad-4 {
+                background: repeating-radial-gradient(red, yellow 10%, green 15%);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="grad-1">radial-gradient(red, yellow, green)</div>
+        <div class="grad-2">radial-gradient(red 5%, yellow 15%, green 60%)</div>
+        <div class="grad-3">background: radial-gradient(circle, red, yellow, green);</div>
+        <div class="grad-4"></div>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Inheritance Property Value</title>
+</head>
+<body>
+
+    <!-- STYLE SECTION -->
+
+    <style type="text/css">
+
+    body {
+        font-family: "Aller","sans-serif";
+        margin-left: 2em;
+    }
+
+    .parent-image  {
+    width: 30em;
+    height: 12em;
+    background-image: url("images/img1.jpg");
+    background-repeat: no-repeat;
+    }
+
+    .parent-image h4 {
+    color: gray;
+    text-align: center;
+    line-height: 1.5em;		/* vertically align text in the center */
+    padding: 1em;			/* just to differentiate the two elements */
+    }
+
+    .child-image {
+    width: inherit;					/* inherited width */
+    height: inherit;				/* inherited height */
+    background-image: inherit;		/* inherited background */
+    background-repeat: inherit;
+    }
+
+    .parent h3 {
+    font-variant: small-caps;
+    color: red;
+    }
+
+    .parent p {
+    text-indent: 1em;
+    color: blue;
+    }
+
+    .parent button {
+    padding: 1em 2em;
+    background-color: gray;
+    color: white;
+    border-radius: 0.5em;
+    border: 0.1em solid gray;
+    }
+
+    .child2 p {						/* declined inherited attributes from parent */
+    text-indent: inherit;
+    color: inherit;
+    }
+
+    .child2 h3 {					/* declined inherited attributes from parent */
+    font-variant: inherit;
+    color: inherit;
+    }
+
+    .child2 button {				/* declined inherited attributes from parent */
+    background-color: inherit;
+    color: inherit;
+    }
+
+
+    .title {
+    font-size: 2em;
+    color: green;
+    font-weight: bold;
+    }
+
+    .text-style-1 {
+    color: #50838e;
+    font-weight: italic;
+    font-size: 1.2em;
+    }
+
+    .link {
+    color: blue;
+    text-decoration: underline;
+    }
+
+    .bold {
+    font-weight: bolder;
+    }
+
+      </style>
+
+
+    <!-- HTML SECTION -->
+
+    <h2> Size and Background Inheritance </h2>
+    <!-- SIZE AND BACKGROUND INHERITANCE -->
+    <div class="parent-image">
+    <h4>Everything you can imagine is real.<br>-The Parent Image</h4>
+
+    <div class="child-image">
+    <h4>Glad to have looked after you.<br>-The Child Image</h4>
+
+    </div><!-- end child image -->
+    </div><!-- end parent image -->
+
+
+
+    <h2> Manipulations on Inheritance </h2>
+    <!-- MANIPULATIONS ON INHERITANCE -->
+    <div class="parent">
+
+    <div class="child1">
+    <h3>A title here</h3>
+    <p>A paragraph text here</p>
+    <button>A button here</button>
+    </div><!-- end child1 element -->
+
+    <div class="child2">
+    <h3>A title here</h3>
+    <p>A paragraph text here</p>
+    <button>A button here</button>
+    </div><!-- end child2 element -->
+
+    </div><!-- end parent element -->
+
+
+    <h2> Tag Inheritance </h2>
+    <!-- TAG INHERITANCE EXAMPLE -->
+    <button>Button - Tag Inheritance</button>
+
+    <h2> Location Inheritance </h2>
+    <!-- LOCATION INHERITANCE EXAMPLE -->
+    <div class="title">I am a title</div>
+        <p>This section is to show the location inheritance</p>
+        <ul>
+            <li>Some information goes here</li>
+            <li>Some information goes here</li>
+            <li>Some information goes here</li>
+        </ul>
+
+    <div class="title">I am also a title</div>
+        <p>You see, everywhere there is a title, it gets the same attributes.</p>
+        <ul>
+            <li>Some information goes here</li>
+            <li>Some information goes here</li>
+            <li>Some information goes here</li>
+        </ul>
+
+    <h2> Class Inheritance </h2>
+    <!-- CLASS INHERITANCE EXAMPLE -->
+    <p>Just a paragraph here to show the class inheritance.</p>
+    <ul class="text-style-1">
+        <li>This will be just a text line</li>
+        <li class="link bold">Download Now</li>
+        <li>Third line goes here</li>
+    </ul>
+
+
+    </div><!-- end parent element -->
+
+</body>
+</html>

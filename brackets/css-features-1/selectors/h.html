@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <style>
+      a[href*="jv2351"] {
+        color: red;
+      }
+    </style>
+</head>
+<body>
+
+   <div id="container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="http://jv2351.com">jv2351</a> tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="http://www.jv2351.com">www.jv2351.com+</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+</body>
+</html>

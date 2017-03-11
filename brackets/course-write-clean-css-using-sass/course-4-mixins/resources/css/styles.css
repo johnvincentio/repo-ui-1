@@ -1,0 +1,264 @@
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+/* line 5, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_setup.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 12, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_setup.scss */
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* line 22, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_setup.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 23, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_setup.scss */
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 6, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_placeholders.scss */
+.move-1 {
+  display: block;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+/* line 5, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav {
+  display: block;
+  margin: 0 auto;
+  background-color: orange;
+  border: 10px solid black;
+  width: 700px;
+}
+
+/* line 10, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav ul {
+  list-style-type: none;
+}
+
+/* line 14, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav a {
+  background-color: green;
+  color: #fff;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav a:hover {
+  color: blue;
+}
+
+/* line 26, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav li {
+  display: block;
+  float: left;
+}
+
+/* line 30, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav li li {
+  display: none;
+  float: none;
+}
+
+/* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav li li a:hover {
+  background-color: red;
+}
+
+/* line 39, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav li ul {
+  position: absolute;
+}
+
+/* line 43, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/_nav.scss */
+nav li:hover li {
+  display: block;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+#header {
+  height: 150px;
+}
+
+/* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+h1 {
+  color: yellow;
+  font-size: 28px;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+h2 {
+  color: yellow;
+  font-size: 21px;
+}
+
+/* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+a {
+  color: #fff;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.container {
+  border: dashed 2px;
+  clear: left;
+  margin: 10px;
+}
+
+/* line 31, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.paragraph-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: orange;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(blue), to(orange));
+  background-image: -webkit-linear-gradient(left, blue, orange);
+  background-image: -moz-linear-gradient(left, blue, orange);
+  background-image: -ms-linear-gradient(left, blue, orange);
+  background-image: -o-linear-gradient(left, blue, orange);
+  background-image: linear-gradient(left, blue, orange);
+  background-repeat: repeat-x;
+  display: block;
+  margin: 0 auto;
+  background-color: orange;
+  height: 50px;
+  width: 100px;
+}
+
+/* line 40, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.paragraph-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(yellow), to(red));
+  background-image: -webkit-linear-gradient(top, yellow, red);
+  background-color: red;
+  background-image: -moz-linear-gradient(top, yellow, red);
+  background-image: -ms-linear-gradient(top, yellow, red);
+  background-image: -o-linear-gradient(top, yellow, red);
+  background-image: linear-gradient(top, yellow, red);
+  background-repeat: repeat-x;
+  display: block;
+  margin: 0 auto;
+  background-color: orange;
+  height: 60px;
+  width: 140px;
+}
+
+@-webkit-keyframes move-the-object {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@-moz-keyframes move-the-object {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@-o-keyframes move-the-object {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes move-the-object {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+/* line 53, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.move-1 {
+  -webkit-animation: move-the-object 2s 1, move-the-object-again 2.5s 1 2.5s;
+  -moz-animation: move-the-object 2s 1, move-the-object-again 2.5s 1 2.5s;
+  -o-animation: move-the-object 2s 1, move-the-object-again 2.5s 1 2.5s;
+  animation: move-the-object 2s 1, move-the-object-again 2.5s 1 2.5s;
+  height: 60px;
+  width: 500px;
+}
+
+/* this produces lots of repeated css
+
+@mixin message() {
+    color: #339f92;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.error {
+    border: 1px solid red;
+    @include message();
+}
+
+.success {
+    border: 1px solid green;
+    @include message();
+}
+
+.warning {
+    border: 1px solid orange;
+    @include message();
+}
+*/
+/* line 87, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.error, .success, .warning {
+  display: block;
+  margin: 0 auto;
+  background-color: orange;
+  color: #339f92;
+  padding: 10px;
+  text-align: center;
+  width: 40%;
+}
+
+/* line 95, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.error {
+  border: 1px solid red;
+}
+
+/* line 100, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.success {
+  border: 1px solid green;
+}
+
+/* line 105, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-maxins/resources/scss/styles.scss */
+.warning {
+  border: 1px solid orange;
+}
+
+/*# sourceMappingURL=styles.css.map */

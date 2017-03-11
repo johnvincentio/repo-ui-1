@@ -1,0 +1,105 @@
+/* line 4, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav {
+  width: 550px;
+}
+
+/* line 8, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav li {
+  display: block;
+  float: left;
+}
+
+/* line 18, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav li li {
+  display: none;
+  float: none;
+}
+
+/* line 22, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav li li a:hover {
+  background-color: blue;
+}
+
+/* line 27, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav li ul {
+  position: absolute;
+}
+
+/* line 31, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav li:hover li {
+  display: block;
+}
+
+/* line 36, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav a {
+  background-color: green;
+  color: #ffd280;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* line 43, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_nav.scss */
+nav a:hover {
+  color: white;
+}
+
+/* line 1, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_placeholders.scss */
+nav, p {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 6, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/_placeholders.scss */
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/style.scss */
+#header {
+  height: 150px;
+}
+
+/* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/style.scss */
+h1 {
+  font-size: 28px;
+  color: orange;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/style.scss */
+h2 {
+  font-size: 21px;
+  color: orange;
+}
+
+/* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/style.scss */
+a {
+  color: orange;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-4-functions/scss/style.scss */
+p {
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFC), to(#000));
+  background-image: -webkit-linear-gradient(left, #FFC, #000);
+  background-image: -moz-linear-gradient(left, #FFC, #000);
+  background-image: -ms-linear-gradient(left, #FFC, #000);
+  background-image: -o-linear-gradient(left, #FFC, #000);
+  background-image: linear-gradient(left, #FFC, #000);
+  background-repeat: repeat-x;
+  clear: left;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

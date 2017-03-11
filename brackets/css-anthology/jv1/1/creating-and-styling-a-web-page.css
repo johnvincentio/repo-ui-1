@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+	
+html {
+	font-size: 100%;
+}
+
+body {
+	font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;
+	color : #000000;
+	background : #ffffff;
+	padding : 20px;
+}
+
+#wrapper {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin: 0 auto;
+	width: 500px;
+}
+
+h1 {
+	font: 1.5em/1.8em Verdana, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+blockquote {
+	margin: 0 100px;
+}
+
+blockquote p {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+/* ---------- add your code below ---------- */
+

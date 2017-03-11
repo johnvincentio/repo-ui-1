@@ -1,0 +1,10 @@
+%center {
+    margin: 0 auto;
+    display: block;
+}
+
+%textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

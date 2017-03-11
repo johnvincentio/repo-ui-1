@@ -1,0 +1,10 @@
+
+@import 'variables';
+
+// if no arguments, use a placeholder instead of a mixin.
+
+%another-center {
+    display: block;
+    margin: 0 auto;
+    background-color: $color-yellow;
+}

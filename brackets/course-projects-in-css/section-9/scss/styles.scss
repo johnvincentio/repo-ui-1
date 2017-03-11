@@ -1,0 +1,49 @@
+@import 'mixins';
+@import 'placeholders';
+
+$animation-width: 1000px;
+
+body {
+    @include animation (move-background 10s linear infinite);
+    background: url('../img/bg.jpg') repeat-x 0 0;        // top left
+    height: 100%;
+}
+
+.container {
+    margin: 270px auto;
+    overflow: hidden;
+    width: $animation-width;
+}
+
+.car-body {
+    background: url('../img/body.png') no-repeat;
+    height: 170px;        // same width and height as the image
+    margin: auto;        // position centre
+    width: 490px;
+}
+
+@include keyframes (rotate-wheel) {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@include keyframes (move-background) {
+    0% { background-position: 0 0; }
+    100% { background-position: $animation-width 0; }
+}
+
+.wheel-front {
+    @extend %wheel;
+    margin-left: 279px;
+    margin-top: -75px;
+}
+
+.wheel-back {
+    @extend %wheel;
+    margin-left: 617px;
+    margin-top: -75px;
+}
+
+.pause {
+    @include pause-animation();
+}

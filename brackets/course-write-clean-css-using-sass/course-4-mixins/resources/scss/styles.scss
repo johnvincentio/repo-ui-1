@@ -1,0 +1,108 @@
+@import 'variables';
+@import 'setup';
+@import 'mixins';
+@import 'placeholders';
+@import 'nav';
+
+#header {
+    height: $header-height;
+}
+
+h1 {
+    color: $header-color;
+    font-size: $header-size;
+}
+
+h2 {
+    color: $header-color;
+    font-size: $header-size - 7px;
+}
+
+a {
+    color: $link-color;
+}
+
+.container {
+    border: dashed 2px;
+    clear: left;
+    margin: 10px;
+}
+
+.paragraph-1 {
+    @include text-overflow();
+    //    @include horizontal-gradient();
+    @include horizontal-gradient($color-blue, $color-orange);
+    @include center;
+    height: 50px;
+    width: 100px;
+}
+
+.paragraph-2 {
+    @include text-overflow();
+    @include vertical();
+    @include center;
+    height: 60px;
+    width: 140px;
+}
+
+@include keyframes(move-the-object) {
+    0%   { left: 100px; }
+    100% { left: 200px; }
+}
+
+.move-1 {
+    @extend %another-center;
+    @include animation('move-the-object 2s 1', 'move-the-object-again 2.5s 1 2.5s');
+    height: 60px;
+    width: 500px;
+}
+
+/* this produces lots of repeated css
+
+@mixin message() {
+    color: #339f92;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.error {
+    border: 1px solid red;
+    @include message();
+}
+
+.success {
+    border: 1px solid green;
+    @include message();
+}
+
+.warning {
+    border: 1px solid orange;
+    @include message();
+}
+*/
+
+// this is better, use placeholder and @extend
+
+%message {        // abstract, not declared in css file.
+    @include center;
+    color: #339f92;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.error {
+    @extend %message;
+    border: 1px solid $color-red;
+}
+
+.success {
+    @extend %message;
+    border: 1px solid $color-green;
+}
+
+.warning {
+    @extend %message;
+    border: 1px solid $color-orange;
+}

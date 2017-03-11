@@ -1,0 +1,101 @@
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+body {
+  font: 100% Arial, sans-serif;
+  color: #333;
+}
+
+/* line 14, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 19, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+nav li {
+  display: inline-block;
+}
+
+/* line 22, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* line 29, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main {
+  width: 97%;
+}
+
+/* line 32, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main p, #main div {
+  font-size: 2em;
+}
+
+/* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main p a, #main div a {
+  font-weight: bold;
+}
+
+/* line 37, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main pre {
+  font-size: 3em;
+}
+
+/* line 40, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main-1 {
+  color: black;
+}
+
+/* line 42, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main-1-sidebar {
+  border: 1px solid;
+}
+
+/* line 45, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main-2 {
+  color: black;
+}
+
+/* line 47, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main-2 a {
+  font-weight: bold;
+}
+
+/* line 49, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main-2 a:hover {
+  color: red;
+}
+
+/* line 53, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold;
+}
+
+/* line 61, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+.funky-1 {
+  font: 20px/24px fantasy;
+  font-weight: bold;
+}
+
+/* line 68, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+p {
+  color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+/* line 74, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+p:before {
+  content: "I ate 15 pies!";
+}
+
+/* line 83, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-1/resources/scss/main.scss */
+#main-4 {
+  content: "First content";
+  new-content: "First time reference";
+}
+
+/*# sourceMappingURL=main.css.map */

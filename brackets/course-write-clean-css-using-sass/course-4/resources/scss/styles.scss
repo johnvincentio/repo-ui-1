@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'setup';
+@import 'nav';
+
+#header {
+    height: $header-height;
+}
+
+h1 {
+    color: $header-color;
+    font-size: $header-size;
+}
+
+h2 {
+    color: $header-color;
+    font-size: $header-size - 7px;
+}

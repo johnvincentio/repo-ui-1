@@ -1,0 +1,8 @@
+
+%wheel {
+    @include animation (rotate-wheel 5s linear 0s infinite);
+    background: url('../img/wheel.png') no-repeat;
+    float: left;
+    height: 80px;
+    width: 80px;        // same width and height as the image
+}

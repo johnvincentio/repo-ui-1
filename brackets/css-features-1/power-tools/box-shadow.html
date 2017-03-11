@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title>Box Shadow</title>
+
+        <style>
+            /* box-shadow: offset_x offset_y blur_radius color; */
+            .art-1 {
+                width: 250px;
+                height: 100px;
+                margin: auto;
+                box-shadow: 25px 35px 60px blue
+            }
+            .art-2 {
+                height: 100px;
+                width: 300px;
+                margin: auto;
+                box-shadow: 0 0 20px #333 inset;    /* inset; shadow rendered inside the box */
+            }
+            .div-1 {
+                background-color: yellow;
+                width: 100px;
+                height: 100px;
+                margin: 30px auto;
+
+                box-shadow: 0 0 20px #333 inset,
+                            20px 15px 30px yellow,
+                            -20px 15px 30px lime,
+                            -20px -15px 30px blue,
+                            20px -15px 30px red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <article class="art-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dignissimos.</p>
+        </article>
+        <article class="art-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, dignissimos.</p>
+        </article>
+        <div class="div-1"></div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title>Linear Gradients - Repeating</title>
+
+        <style>
+            div {
+                width: 500px;
+                height: 200px;
+                border: 2px solid #ddd;
+                margin: 20px;
+            }
+
+/* background: linear-gradient(direction, color-stop1, color-stop2, ...); */
+
+            .grad-1 {
+                background-color: red;    /* for older browsers */
+                background: repeating-linear-gradient(red, yellow 10%, green 20%);
+            }
+            .grad-2 {
+                background: repeating-linear-gradient(to right, red, yellow 10%, green 20%);
+            }
+            .grad-3 {
+                background: repeating-linear-gradient(to top, red, yellow 10%, green 20%);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="grad-1">repeating-linear-gradient(red, yellow 10%, green 20%)</div>
+        <div class="grad-2">repeating-linear-gradient(to right, red, yellow 10%, green 20%)</div>
+        <div class="grad-3">repeating-linear-gradient(to top, red, yellow 10%, green 20%)</div>
+    </body>
+</html>

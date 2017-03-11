@@ -1,0 +1,23 @@
+/* line 8, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/extend.scss */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 10px;
+}
+
+/* line 18, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/extend.scss */
+.success {
+  border-color: #080;
+}
+
+/* line 23, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/extend.scss */
+.error {
+  border-color: #f00;
+}
+
+/* line 28, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/extend.scss */
+.warning {
+  border-color: #ff0;
+}
+
+/*# sourceMappingURL=extend.css.map */

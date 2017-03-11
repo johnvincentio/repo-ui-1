@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-11-13, 19:14:38
+    Author     : Arek
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-11-20, 15:16:16
+    Author     : Arek
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-11-25, 18:26:34
+    Author     : Arek
+*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  float: left;
+  display: block;
+}
+nav li li {
+  float: none;
+  display: none;
+}
+nav li li a:hover {
+  background-color: red;
+}
+nav li:hover li {
+  display: block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  background-color: green;
+}
+nav a:hover {
+  color: blue;
+}
+
+#header {
+  height: 150px;
+}
+
+h1 {
+  font-size: 28px;
+  color: yellow;
+}
+
+h2 {
+  font-size: 21px;
+  color: yellow;
+}
+
+a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Slideshow Example</title>
+</head>
+<body>
+
+<!-- STYLE  SECTION -->
+
+<style type="text/css">
+
+
+
+.css-slideshow {
+position: relative;			/* positioning facilities */
+max-width: 495px;			/* maximum width of the image */
+height: 370px;
+margin: 1em auto .5em auto;				/* some margin */
+font-family: "Montserrat", sans-serif;	/* just a custom font */
+font-weight: 300;						/* font-weight, semibold */
+}
+
+.css-slideshow figure {
+margin: 0;					/* ensuring there is no margin */
+max-width: 495px;
+height: 370px;
+background: #fff;			/* white background */
+position: absolute;			/* positioning facilities */
+}
+
+.css-slideshow img {				/* a shadow for our box wrapper */
+-webkit-box-shadow: 0 0 2px #666;
+box-shadow: 0 0 2px #666;
+}
+
+/* Give the figcaption a 0% opacity at first */
+.css-slideshow figcaption {
+position: absolute;
+top: 5px;
+color: #fff;
+background: rgba(0,0,0, .3);
+font-size: .8em;
+padding: 8px 12px;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+opacity: 0;
+-webkit-transition: opacity .5s;
+-moz-transition: opacity .5s;
+-o-transition: opacity .5s;
+-ms-transition: opacity .5s;
+transition: opacity .5s;	/* transition duration */
+}
+
+/* Give the figcaption a 100% opacity at first */
+.css-slideshow:hover figure figcaption {
+-webkit-transition: opacity .5s;
+-moz-transition: opacity .5s;
+-o-transition: opacity .5s;
+-ms-transition: opacity .5s;
+transition: opacity .5s;		/* transition duration */
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+opacity: 1;
+}
+
+
+/* Here every child of css-transition gets animated */
+
+.css-slideshow figure:nth-child(1) {
+-webkit-animation: xfade 48s 42s  infinite;
+-moz-animation: xfade 48s 42s  infinite;
+-ms-animation: xfade 48s 42s infinite;
+-o-animation: xfade 48s 42s infinite;
+animation: xfade 48s 42s infinite;
+}
+.css-slideshow figure:nth-child(2) {
+-webkit-animation: xfade 48s 36s infinite;
+-moz-animation: xfade 48s 36s infinite;
+-ms-animation: xfade 48s 36s infinite;
+-o-animation: xfade 48s 36s infinite;
+animation: xfade 48s 36s infinite;
+}
+.css-slideshow figure:nth-child(3) {
+-webkit-animation: xfade 48s 30s infinite;
+-moz-animation: xfade 48s 30s infinite;
+-ms-animation: xfade 48s 30s infinite;
+-o-animation: xfade 48s 30s infinite;
+animation: xfade 48s 30s infinite;
+}
+.css-slideshow figure:nth-child(4) {
+-webkit-animation: xfade 48s 24s infinite;
+-moz-animation: xfade 48s 24s infinite;
+-ms-animation: xfade 48s 24s infinite;
+-o-animation: xfade 48s 24s infinite;
+animation: xfade 48s 24s infinite;
+}
+.css-slideshow figure:nth-child(5) {
+-webkit-animation: xfade 48s 18s infinite;
+-moz-animation: xfade 48s 18s infinite;
+-ms-animation: xfade 48s 18s infinite;
+-o-animation: xfade 48s 18s infinite;
+animation: xfade 48s 18s infinite;
+}
+.css-slideshow figure:nth-child(6) {
+-webkit-animation: xfade 48s 12s infinite;
+-moz-animation: xfade 48s 12s infinite;
+-ms-animation: xfade 48s 12s infinite;
+-o-animation: xfade 48s 12s infinite;
+animation: xfade 48s 12s infinite;
+}
+.css-slideshow figure:nth-child(7) {
+-webkit-animation: xfade 48s 6s infinite;
+-moz-animation: xfade 48s 6s infinite;
+-ms-animation: xfade 48s 6s infinite;
+-o-animation: xfade 48s 6s infinite;
+animation: xfade 48s 6s infinite;
+}
+.css-slideshow figure:nth-child(8) {
+-webkit-animation: xfade 48s 0s infinite;
+-moz-animation: xfade 48s 0s infinite;
+-ms-animation: xfade 48s 0s infinite;
+-o-animation: xfade 48s 0s infinite;
+animation: xfade 48s 0s infinite;
+}
+
+
+@keyframes "xfade" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+       opacity: 1;
+ }
+14.67% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+16.67% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+ 98% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+       opacity: 1;
+ }
+}
+@-moz-keyframes xfade {
+ 0% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+14.67% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+16.67% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+ 98% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+}
+@-webkit-keyframes "xfade" {
+ 0% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+14.67% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+16.67% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+ 98% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+}
+@-ms-keyframes "xfade" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+14.67% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+16.67% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+ 98% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+}
+@-o-keyframes "xfade" {
+ 0% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+14.67% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+16.67% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+ 98% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+}
+  </style>
+
+
+
+
+    <!-- HTML SECTION  -->
+<div class="css-slideshow">
+    <figure>
+        <img src="images/slide1.jpg" width="495" height="370" />
+        <figcaption><strong>CSS3:</strong>Yourr first caption goes here </figcaption>
+    </figure>
+    <figure>
+        <img src="images/slide2.jpg" width="495" height="370" />
+        <figcaption><strong>Slideshow:</strong> Your second caption goes here</figcaption>
+    </figure>
+    <figure>
+        <img src="images/slide3.jpg" width="495" height="370" />
+        <figcaption><strong>Offline &amp; Storage:</strong> Your third caption goes here</figcaption>
+    </figure>
+    <figure>
+        <img src="images/slide4.jpg" width="495" height="370" />
+        <figcaption><strong>Cloud:</strong> Your fourth caption goes here</figcaption>
+    </figure>
+    <figure>
+        <img src="images/slide5.jpg" width="495" height="370" />
+        <figcaption><strong>Server:</strong> Your fifth caption goes here</figcaption>
+    </figure>
+    <figure>
+        <img src="images/slide6.jpg" width="495" height="370" />
+        <figcaption><strong>Shopping:</strong>Your sixth caption goes here</figcaption>
+    </figure>
+    <figure>
+        <img src="images/slide7.jpg" width="495" height="370" />
+        <figcaption><strong>Smartphone:</strong> Your seventh caption goes here</figcaption>
+    </figure>
+    <figure>
+        <img src="images/img8.jpg" width="495" height="370" />
+        <figcaption><strong>Last Caption:</strong>Your last caption goes here</figcaption>
+    </figure>
+
+
+  </div>
+
+</body>
+</html>
+
+

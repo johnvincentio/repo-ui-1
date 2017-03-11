@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-11-13, 19:14:38
+    Author     : Arek
+*/
+@import "_variables.scss";
+
+@import "_nav.scss";
+
+#header
+{
+    height: $header-height;
+}
+h1{
+   font-size: $header-size; 
+   color: $header-color;
+}
+h2{
+   font-size: $header-size - 7px; 
+   color: $header-color;
+}
+
+a
+{
+    color: $link-color;
+}
+
+

@@ -1,0 +1,31 @@
+@import 'variables';
+
+h1 {
+    font-size: $size-of-header;
+}
+
+h2 {
+    font-size: $size-of-header - 7;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.box {
+    @include border-radius(10px);
+}
+
+$color-base: #fff;
+$my-color-1: #333;
+$my-color-2: #fff;
+h3 {
+    @if lightness($color-base) >= 51% {
+        background-color: $my-color-1;
+    } @else {
+        background-color: $my-color-2;
+    }
+}

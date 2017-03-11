@@ -1,0 +1,16 @@
+@mixin generateRow($number-of-items, $margin) {
+    width: ((100% - ($margin * $number-of-items)) / $number-of-items);
+    margin-right: $margin;
+    margin-bottom: $margin;
+}
+
+@mixin horizontalGradient($startColor: $color-white, $endColor: $color-red) {
+    background-color: $endColor;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColor), to($endColor));
+    background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+    background-image: -moz-linear-gradient(left, $startColor, $endColor);
+    background-image: -ms-linear-gradient(left, $startColor, $endColor);
+    background-image: -o-linear-gradient(left, $startColor, $endColor);
+    background-image: linear-gradient(left, $startColor, $endColor);
+    background-repeat: repeat-x;
+}

@@ -1,0 +1,120 @@
+
+$font-stack: 'Arial', sans-serif;
+$body-background-color: #f5f3ef;
+$background-color: #1f2c36;
+$white-color: #fff;
+$grey-color: #ccc;
+$body-text-color: #666;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $body-background-color;
+    color: $body-text-color;
+    font-family: $font-stack;
+    line-height: 1.5em;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+header {
+    background-color: $background-color;
+    color: $white-color;
+    height: 130px;
+    margin-bottom: 20px;
+
+    .logo {
+        padding-top: 20px;
+    }
+}
+
+.container {
+    margin: auto;
+    max-width: 960px;
+    overflow: auto;
+    width: 80%;
+}
+
+section {
+    float: right;
+    width: 80%;
+    padding: 20px;
+    overflow: auto;
+    box-sizing: border-box;
+
+    .gallery {
+        img {
+            width: 23%;
+            opacity: 1;
+            transition: all 1s;
+
+            &:hover {
+                background-color: $white-color;
+                opacity: .5;
+                transition: all 1s;
+            }
+        }
+    }
+}
+
+aside {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    overflow: auto;
+    box-sizing: border-box;
+
+    nav {
+        a {
+            color: $background-color;
+            text-decoration: none;
+            line-height: 2.2em;
+            padding: 10px 20px;
+
+            &:active {
+                background-color: $background-color;
+                color: $white-color;
+            }
+
+            &:hover {
+                background-color: $grey-color;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $background-color;
+    color: $white-color;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media(max-width:960px) {
+    .container {
+        width: 95%;
+    }
+
+    section,
+    aside {
+        float: none;
+        width: 100%;
+
+        nav {
+            a {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    section .gallery img {
+        width: 49%;
+    }
+}

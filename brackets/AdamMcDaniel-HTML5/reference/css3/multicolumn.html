@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Multi-column Layout - HTML5.array.org</title>
+    <!--[if lt IE 9]>
+    <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+    <base href='../../'>
+    <script src='highlight.min.js'></script>
+    <link rel="stylesheet" href='highlight.min.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='base.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width: 500px)' href='mobile.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class='content'>
+    <header>
+      <nav>
+        <a href='index.html'>Home</a>
+        <a href='tutorials/'>Tutorials</a>
+        <a href='demos/'>Demos</a>
+        <a href='vb/'>Visual&nbsp;Blueprint&trade;</a>
+      </nav>
+      <h1>HTML5.array.org</h1>
+    </header>
+    <section id='articles'>
+      <h2>CSS Reference</h2>
+      <article class='reference'>
+        <hgroup>
+          <h3>Multi-column Layout</h3>
+          <h4>Synopsis</h4>
+        </hgroup>
+        <pre><code>&lt;style&gt;
+  <i>div.multi-column</i> {
+    column-count: <i>number</i>
+    -moz-column-count: <i>number</i>
+    -webkit-column-count: <i>number</i>
+  }
+&lt;/style&gt;
+&lt;div class='multi-column'&gt;
+  &lt;p&gt;paragraph 1&lt;/p&gt;
+  &lt;p&gt;paragraph 2&lt;/p&gt;
+  &lt;p&gt;paragraph 3&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+        <h4>Description</h4>
+        <p>
+          The Multi-column Layout is a module of the draft CSS3
+          specification, and by extension, HTML5. It allows you to organize
+          web page data into multiple columns of variable height and width,
+          depending on how much content there is to display.
+        </p>
+        <p>
+          The Multi-column Layout makes it is easier to read large amounts
+          of text, and allows for better use of space, just like columns in
+          a newspaper. This newspaper-column style format has been used in
+          print for centuries, and now the layout style can easily be
+          transferred to web pages with very little code change.
+        <p>
+        </p>
+        <h4>Example</h4>
+        <style>
+          article.example {
+            margin: 10px;
+          }
+          article.example cite {
+            font-size: 0.5em;
+          }
+          div.multi-column {
+            column-count: 3;
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            border: 2px solid black;
+            padding: 10px;
+            column-rule: 3px dashed red;
+            -moz-column-rule: 3px dashed red;
+            -webkit-column-rule: 3px dashed red;
+            column-gap: 2em;
+            -moz-column-gap: 2em;
+            -webkit-column-gap: 2em;
+          }
+          div.multi-column > p {
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+          }
+          div.multi-column > h5 {
+            column-span: all;
+            -moz-column-span: all;
+            -webkit-column-span: all;
+            margin: 0;
+          }
+        </style>
+        <article class='example'>
+          <cite>Excerpt from chapter 14 of Pride and Prejudice by Jane Austen</cite>
+          <div class='multi-column'>
+            <h5>Chapter 14</h5>
+            <p>
+              By tea-time, however, the dose had been enough, and Mr. Bennet was glad to take his guest into the drawing-room again, and when tea was over, glad to invite him to read aloud to the ladies. Mr. Collins readily assented, and a book was produced; but on beholding it (for every thing announced it to be from a circulating library), he started back, and begging pardon, protested that he never read novels. -- Kitty stared at him, and Lydia exclaimed. -- Other books were produced, and after some deliberation he chose Fordyce's Sermons. Lydia gaped as he opened the volume, and before he had, with very monotonous solemnity, read three pages, she interrupted him with,
+            </p>
+            <p>
+              "Do you know, mama, that my uncle Philips talks of turning away Richard, and if he does, Colonel Forster will hire him. My aunt told me so herself on Saturday. I shall walk to Meryton to-morrow to hear more about it, and to ask when Mr. Denny comes back from town.''
+            </p>
+            <p>
+              Lydia was bid by her two eldest sisters to hold her tongue; but Mr. Collins, much offended, laid aside his book, and said,
+            </p>
+            <p>
+              "I have often observed how little young ladies are interested by books of a serious stamp, though written solely for their benefit. It amazes me, I confess; -- for certainly, there can be nothing so advantageous to them as instruction. But I will no longer importune my young cousin.''
+            </p>
+            <p>
+              Then turning to Mr. Bennet, he offered himself as his antagonist at backgammon. Mr. Bennet accepted the challenge, observing that he acted very wisely in leaving the girls to their own trifling amusements. Mrs. Bennet and her daughters apologised most civilly for Lydia's interruption, and promised that it should not occur again, if he would resume his book; but Mr. Collins, after assuring them that he bore his young cousin no ill will, and should never resent her behaviour as any affront, seated himself at another table with Mr. Bennet, and prepared for backgammon.
+            </p>
+            <h5>Chapter 15</h5>
+            <p>
+              Mr. Collins was not a sensible man, and the deficiency of nature had been but little assisted by education or society; the greatest part of his life having been spent under the guidance of an illiterate and miserly father; and though he belonged to one of the universities, he had merely kept the necessary terms, without forming at it any useful acquaintance. The subjection in which his father had brought him up had given him originally great humility of manner, but it was now a good deal counteracted by the self-conceit of a weak head, living in retirement, and the consequential feelings of early and unexpected prosperity. A fortunate chance had recommended him to Lady Catherine de Bourgh when the living of Hunsford was vacant; and the respect which he felt for her high rank and his veneration for her as his patroness, mingling with a very good opinion of himself, of his authority as a clergyman, and his rights as a rector, made him altogether a mixture of pride and obsequiousness, self-importance and humility.
+            </p>
+          </div>
+        </article>
+      </article>
+    </section>
+    <footer>
+      &copy;2011 Adam McDaniel
+    </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <title>Postion</title>
+
+<style>
+
+html, body, div {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+body {
+    width: 480px;
+    margin: 20px auto;
+}
+
+h1 {
+    padding: 0;
+    margin: 0 10px 20px;
+    font: bold 20px Cambria, Georgia, serif;
+}
+
+.container {
+    background: #DCE6BE;
+/*    position: relative;*/
+}
+
+.section {
+    width: 220px;
+    height: 200px;
+    padding: 30px 0 0;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.div-1 {
+    background: #A0C431;
+    position: relative;
+    left: 20px;
+    top: 75px;
+}
+.div-2 {
+    background: #556a15;
+    position: absolute;    /* relative to a parent that is positioned relative, or body */
+    left: 120px;
+    top: 175px;
+}
+
+</style>
+</head>
+
+<body>
+    <h1>Position</h1>
+
+    <div class="container">
+        <div class="section div-1">Div-1</div>
+        <div class="section div-2">Div-2</div>
+    </div>
+
+</body>
+
+</html>

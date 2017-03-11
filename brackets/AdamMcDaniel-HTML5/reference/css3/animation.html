@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Animation Properties - HTML5.array.org</title>
+    <!--[if lt IE 9]>
+    <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+    <base href='../../'>
+    <script src='highlight.min.js'></script>
+    <link rel="stylesheet" href='highlight.min.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='base.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width: 500px)' href='mobile.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class='content'>
+    <header>
+      <nav>
+        <a href='index.html'>Home</a>
+        <a href='tutorials/'>Tutorials</a>
+        <a href='demos/'>Demos</a>
+        <a href='vb/'>Visual&nbsp;Blueprint&trade;</a>
+      </nav>
+      <h1>HTML5.array.org</h1>
+    </header>
+    <section id='articles'>
+      <h2>CSS Reference</h2>
+      <article class='reference'>
+        <hgroup>
+          <h3>Animation Properties</h3>
+          <h4>Synopsis</h4>
+        </hgroup>
+        <pre><code>&lt;style&gt;
+  <i>selector</i> {
+    -webkit-animation-name: <i>name</i>;
+    -webkit-animation-direction: <i>direction</i>;
+    -webkit-animation-duration: <i>duration</i>;
+    -webkit-animation-iteration-count: <i>count</i>;
+    <i>property</i>: <i>value1</i>;
+    ...
+  }
+  @-webkit-keyframes <i>name</i> {
+    <i>percent1</i> { <i>property</i>: <i>value2</i>; ... }
+    <i>percent2</i> { <i>property</i>: <i>value3</i>; ... }
+    ...
+  }
+&lt;/style&gt;
+</code></pre>
+        <h4>Description</h4>
+        <p>
+          One of the highly anticipated features of CSS3 is its ability to
+          create simple animations without any JavaScript coding.
+          Implemented by Apple in the WebKit engine, a new group of
+          animation properties and a new selector called @-webkit-keyframes
+          were created which expands on the idea of
+          transitions-between-styles, described in the previous section. To
+          begin, compose a selector that matches what you would like to
+          animate.
+        </p>
+        <h4>Example</h4>
+        <style>
+          article.example {
+            margin: 30px 0px;
+          }
+          article.example div {
+            left: 100px;
+            width: 300px;
+            display: inline-block;
+            height: 6em;
+            border: 1px solid black;
+            margin-left: 3%;
+            box-shadow: 3px 3px 10px 0px black;
+            background-color: white;
+          }
+          article.example div p {
+            text-align: center;
+            margin: 2.5em 0;
+          }
+          @-webkit-keyframes jumpy {
+            25% {
+              -webkit-transform: skewy( 20deg );
+              -webkit-transform-origin: bottom right;
+            }
+            50% {
+              -webkit-transform: skewy( 0deg );
+              -webkit-transform-origin: bottom right;
+            }
+            75% {
+              -webkit-transform: skewy( -20deg );
+              -webkit-transform-origin: bottom left;
+            }
+            100% {
+              -webkit-transform: skewy( 0deg );
+              -webkit-transform-origin: bottom left;
+            }
+          }
+          @-webkit-keyframes rounder {
+            from {
+              border-radius: 0px;
+            }
+            to {
+              border-radius: 50px;
+            }
+          }
+          div.animate {
+            -webkit-animation-name: jumpy, rounder;
+            -webkit-animation-direction: normal, alternate;
+            -webkit-animation-duration: 4s, 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-play-state: paused;
+            border: 1px solid black;
+            box-shadow: 3px 3px 10px 0px black;
+          }
+//          div.animate:hover {
+//            -webkit-animation-name: jumpy, rounder;
+//            -webkit-animation-direction: normal, alternate;
+//            -webkit-animation-duration: 4s, 1s;
+//            -webkit-animation-iteration-count: infinite;
+//          }
+        </style>
+        <article class='example'>
+          <div class='animate' onclick='startstop()'>
+            <p>Animating Object</p>
+          </div>
+        </article>
+      </article>
+    </section>
+    <footer>
+      &copy;2011 Adam McDaniel
+    </footer>
+    </div>
+    <script type='text/javascript' src='jquery-1.5.1.js'></script>
+    <script type='text/javascript'>
+      function startstop() {
+        if ( $('div.animate').css('-webkit-animation-play-state') ==
+                 'paused, paused' )
+          $('div.animate').css('-webkit-animation-play-state', 'running');
+        else
+          $('div.animate').css('-webkit-animation-play-state', 'paused');
+      }
+    </script>
+  </body>
+</html>

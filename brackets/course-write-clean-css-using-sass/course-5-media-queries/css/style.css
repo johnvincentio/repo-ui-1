@@ -1,0 +1,251 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-11-20, 15:16:16
+    Author     : Arek
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-15, 22:06:06
+    Author     : Arek
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-18, 02:20:19
+    Author     : Arek
+*/
+/* line 4, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav {
+  width: 550px;
+}
+
+/* line 8, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 14, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+li {
+  display: block;
+  float: left;
+}
+
+/* line 19, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+li
+li {
+  display: none;
+  float: none;
+}
+
+/* line 24, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+li
+li
+a:hover {
+  background-color: blue;
+}
+
+/* line 29, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+li
+ul {
+  position: absolute;
+}
+
+/* line 33, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+li:hover li {
+  display: block;
+}
+
+/* line 38, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  background-color: green;
+  color: #ffdb99;
+}
+
+/* line 45, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_nav.scss */
+nav
+a:hover {
+  color: white;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-15, 21:32:17
+    Author     : Arek
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-15, 22:06:06
+    Author     : Arek
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-16, 04:29:33
+    Author     : Arek
+*/
+/* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_placeholders.scss */
+nav, p {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_placeholders.scss */
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-18, 02:20:19
+    Author     : Arek
+*/
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+#header {
+  height: 150px;
+}
+
+/* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+h1 {
+  font-size: 28px;
+  color: orange;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+h2 {
+  font-size: 21px;
+  color: orange;
+}
+
+/* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+a {
+  color: orange;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+p {
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFC), to(#000));
+  background-image: -webkit-linear-gradient(left, #FFC, #000);
+  background-image: -moz-linear-gradient(left, #FFC, #000);
+  background-image: -ms-linear-gradient(left, #FFC, #000);
+  background-image: -o-linear-gradient(left, #FFC, #000);
+  background-image: linear-gradient(left, #FFC, #000);
+  background-repeat: repeat-x;
+  clear: left;
+}
+
+/* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+.image {
+  background-color: #ececec;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+  .image {
+    width: 100%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  /* line 15, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_mixins.scss */
+  .image:nth-child(1n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  /* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+  .image {
+    width: 46%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+  }
+  /* line 15, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_mixins.scss */
+  .image:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  /* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+  .image {
+    width: 22.75%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+  /* line 15, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_mixins.scss */
+  .image:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* line 34, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+  .image {
+    width: 18.4%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  /* line 15, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/_mixins.scss */
+  .image:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+/* line 58, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+.image img {
+  width: 100%;
+}
+
+/* line 62, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/course-5-media-queries/scss/style.scss */
+.image .image-description {
+  color: #555;
+}
+
+/*# sourceMappingURL=style.css.map */

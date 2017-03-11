@@ -1,0 +1,33 @@
+
+@import "_variables.scss";
+@import "_nav.scss";
+@import "_mixins.scss";
+@import "_placeholders.scss";
+@import "_functions.scss";
+
+#header {
+    height: $header-height;
+}
+
+h1 {
+    font-size: $header-size;
+    color: $header-color;
+}
+
+h2 {
+    font-size: $header-size - 7px;
+    color: $header-color;
+}
+
+a {
+    color: $link-color;
+}
+
+p {
+    width: 200px;
+    height: 50px;
+    @extend %textOverflow;
+    @include horizontalGradient(#FFC, #000);
+    clear: left;
+    @extend %center;
+}

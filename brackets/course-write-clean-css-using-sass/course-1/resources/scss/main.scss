@@ -1,0 +1,87 @@
+// comment will not appear in the css.
+
+// variables
+$font-stack: Arial, sans-serif;
+$primary-color: #333;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+// Nesting
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+#main {
+  width: 97%;
+
+  p, div {
+    font-size: 2em;
+    a { font-weight: bold; }
+  }
+
+  pre { font-size: 3em; }
+}
+
+#main-1 {
+  color: black;
+  &-sidebar { border: 1px solid; }
+}
+
+#main-2 {
+  color: black;
+  a {
+    font-weight: bold;
+    &:hover { color: red; }
+  }
+}
+
+.funky {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+
+.funky-1 {
+  font: 20px/24px fantasy {
+    weight: bold;
+  }
+}
+
+$translucent-red: rgba(255, 0, 0, 0.5);
+p {
+  color: opacify($translucent-red, 0.3);
+  background-color: transparentize($translucent-red, 0.25);
+}
+
+// #{5 + 10} => 15 pies
+p:before {
+  content: "I ate #{5 + 10} pies!";
+}
+
+// !default; assign value if variable is not defined.
+$content: "First content";
+$content: "Second content?" !default;
+$new_content: "First time reference" !default;
+
+#main-4 {
+  content: $content;
+  new-content: $new_content;
+}
+

@@ -1,0 +1,24 @@
+@import 'config';
+
+#container {
+    width: 80%;
+}
+
+.tbl-block {
+    float: none;
+    width: 100%;
+
+    &:hover {
+        border: 0;
+    }
+}
+
+.highlight {
+    border: 0;
+    height: auto;
+    margin-top: 0;
+
+    .btn {
+        margin-top: 0;
+    }
+}

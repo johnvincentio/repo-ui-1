@@ -1,0 +1,30 @@
+/*
+id is more specific, so color would be green.
+#content p is also overridden
+
+However, using !important changes the color to red
+*/
+
+p {
+    color: red !important;
+}
+
+#thing {
+    color: green;
+}
+
+.button {
+   background: orange;
+   color: white;
+   padding: 3px;
+   border-radius: 5px;
+   border: 1px solid black;
+}
+
+#content p {
+   color: grey;
+}
+
+#content a {
+   border-bottom: 1px dotted blue;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            color: green;
+        }
+       ul + p {
+         color: red;
+       }
+    </style>
+</head>
+<body>
+
+   <div id="container">
+      <ul>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p>This p will be red, as ul + p is set to red</p>
+      <p>This p will be green, as p is set to green</p>
+   </div>
+
+</body>
+</html>

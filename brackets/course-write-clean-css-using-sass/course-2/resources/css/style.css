@@ -1,0 +1,24 @@
+/* line 3, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/style.scss */
+h1 {
+  font-size: 18px;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/style.scss */
+h2 {
+  font-size: 11px;
+}
+
+/* line 18, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/style.scss */
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-2/resources/scss/style.scss */
+h3 {
+  background-color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+/* line 3, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/redo/section-2-4/scss/style.scss */
+h1 {
+  font-size: 66px;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/redo/section-2-4/scss/style.scss */
+h2 {
+  font-size: 59px;
+}
+
+/* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/redo/section-2-4/scss/style.scss */
+#msgid1 {
+  font-size: 50px;
+  background-color: red;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/redo/section-2-4/scss/style.scss */
+div {
+  height: 100px;
+  width: 500px;
+  font-size: 96px;
+  background-color: green;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

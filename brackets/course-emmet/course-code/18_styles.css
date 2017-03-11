@@ -1,0 +1,32 @@
+/*body {
+background: #fff url() 0 0 no-repeat;
+border: 1px solid #000;
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+background-image: url(images/);
+padding: 10px 10px 10px 10px;
+padding: 10em -10em;
+
+}*/
+
+
+body {
+
+background-attachment: fixed;
+background-image: -webkit-linear-gradient(top right, yellow 80%, blue 20%);
+background-image: -o-linear-gradient(top right, yellow 80%, blue 20%);
+background-image: linear-gradient(to bottom left, yellow 80%, blue 20%);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+@import "_sassmatic";
+
+// see _sassmatic for the filters.
+
+.test-1 {
+    @extend %filter-sanfran;
+}
+
+.test-2 {
+    @include filter-custom(sepia(100%)); // REQUIRED but doesn't have to have a value
+    @include filter-color(#ffb400, 0.5); // Filter color and opacity
+    @include filter-vignette(white, 70%, 90%, 3rem); // Color, start, stop and inset boxshadow
+}
+
+.test-3 {
+    @extend %filter-glassic;
+}
+
+.test-4 {
+    @extend %filter-washout;
+}
+
+.test-5 {
+    @extend %filter-noire;
+}
+
+.test-6 {
+    @extend %filter-lomo;
+}
+
+.test-7 {
+    @extend %filter-cooling ;
+}

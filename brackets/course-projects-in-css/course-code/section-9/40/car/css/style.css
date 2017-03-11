@@ -1,0 +1,35 @@
+body{
+	background:#000 url(../img/bg.jpg) repeat-x 0 0;
+	height:100%;
+}
+
+#container{
+	margin:270px auto;
+	width:1000px;
+	overflow:hidden;
+}
+
+#car-body{
+	background:url(../img/body.png) no-repeat;
+	width:490px;
+	height:170px;
+	margin:auto;
+}
+
+#wheel-front{
+	background:url(../img/wheel.png) no-repeat;
+	float:left;
+	height:80px;
+	width:80px;
+	margin-left:279px;
+	margin-top:-75px;
+}
+
+#wheel-back{
+	background:url(../img/wheel.png) no-repeat;
+	float:left;
+	height:80px;
+	width:80px;
+	margin-left:617px;
+	margin-top:-75px;
+}

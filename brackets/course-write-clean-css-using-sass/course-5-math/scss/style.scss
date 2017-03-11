@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'nav';
+@import 'mixins';
+@import 'placeholders';
+@import 'functions';
+
+#header {
+    height: $header-height;
+}
+
+h1 {
+    color: $header-color;
+    font-size: $header-size;
+}
+
+h2 {
+    color: $header-color;
+    font-size: $header-size - 7px;
+}
+
+a {
+    color: $link-color;
+}
+
+p {
+
+    @extend %center;
+    @extend %textOverflow;
+    @include horizontalGradient(#FFC, #000);
+    clear: left;
+    height: 50px;
+    width: 200px;
+}
+
+.image {
+    @include generateRow(6, 2%);
+    background-color: #ececec;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+
+    .image-description {
+        color: #555;
+    }
+}

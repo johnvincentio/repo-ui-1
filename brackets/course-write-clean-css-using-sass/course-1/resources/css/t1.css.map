@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "t1.css",
+  "sources": [
+    "../scss/t1.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA,EAAE,CAAC;EACC,SAAS,EAAE,IAAK;CADhB",
+  "names": []
+}

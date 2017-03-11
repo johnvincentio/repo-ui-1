@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Background Image Property: Linear Gradient - HTML5.array.org</title>
+    <!--[if lt IE 9]>
+    <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+    <base href='../../'>
+    <script src='highlight.min.js'></script>
+    <link rel="stylesheet" href='highlight.min.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='base.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width: 500px)' href='mobile.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes'>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class='content'>
+    <header>
+      <nav>
+        <a href='index.html'>Home</a>
+        <a href='tutorials/'>Tutorials</a>
+        <a href='demos/'>Demos</a>
+        <a href='vb/'>Visual&nbsp;Blueprint&trade;</a>
+      </nav>
+      <h1>HTML5.array.org</h1>
+    </header>
+    <section id='articles'>
+      <h2>CSS Reference</h2>
+      <article class='reference'>
+        <hgroup>
+          <h3>Background Image Property: Linear Gradient</h3>
+          <h4>Synopsis</h4>
+        </hgroup>
+        <pre><code>&lt;style&gt;
+  <i>selector</i> {
+    background-image: linear-gradient( <i>start</i>, <i>color percent</i>, ... );
+    background-image: -o-linear-gradient( <i>start</i>, <i>color percent</i>, ... );
+    background-image: -ms-linear-gradient( <i>start</i>, <i>color percent</i>, ... );
+    background-image: -moz-linear-gradient( <i>start</i>, <i>color percent</i>, ... );
+    background-image: -webkit-linear-gradient( <i>start</i>, <i>color percent</i>, ... );
+  }
+&lt;/style&gt;
+</code></pre>
+        <h4>Description</h4>
+        <p>
+          You can assign a linear color gradient in CSS3 that renders one
+          side of an object in one color, shifting across the color
+          spectrum to the other side of the object and the second color.
+          The linear-gradient is applied to the background-image property.
+        </p>
+        <h4>Example</h4>
+        <style>
+          article.example {
+            margin: 30px;
+          }
+          div.linear-gradient {
+            width: 50%;
+            height: 400px;
+            border: 1px solid;
+            background-image: linear-gradient(top left, #bada55, white 30%, black 70%);
+            background-image: -o-linear-gradient(top left, #bada55, white 30%, black 70%);
+            background-image: -ms-linear-gradient(top left, #bada55, white 30%, black 70%);
+            background-image: -moz-linear-gradient(top left, #bada55, white 30%, black 70%);
+            background-image: -webkit-linear-gradient(top left, #bada55, white 30%, black 70%);
+          }
+        </style>
+        <article class='example'>
+          <div class='linear-gradient'>
+            &nbsp;
+          </div>
+        </article>
+      </article>
+    </section>
+    <footer>
+      &copy;2011 Adam McDaniel
+    </footer>
+    </div>
+  </body>
+</html>

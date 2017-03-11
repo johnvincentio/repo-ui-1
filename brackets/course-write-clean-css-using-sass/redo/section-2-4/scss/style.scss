@@ -1,0 +1,22 @@
+$sizeOfHeader: 66px;
+
+h1 {
+    font-size: $sizeOfHeader;
+}
+
+h2 {
+    font-size: $sizeOfHeader - 7px;
+}
+
+#msgid1 {
+    font-size: 50px;
+    background-color: red;
+}
+
+div {
+    height: 100px;
+    width: 500px;
+    font-size: 96px;
+    background-color: green;
+    font-weight: bold;
+}

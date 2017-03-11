@@ -1,0 +1,123 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $font-stack;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+ul,
+li {list-style: none;}
+
+a {text-decoration: none;}
+
+em {
+    color: $primary-color;
+    font-style: bold;
+}
+
+#container {
+    margin: 50px auto;
+    max-width: 900px;
+    width: 900px;
+}
+
+.tbl-block {
+    background-color: $block-bg-color;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 1%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    @if $columns == 4 {
+        width: 23%;
+    } @else if $columns == 3 {
+        width: 30%;
+    } @else {
+        width: 23%;
+    }
+
+    &:hover {
+        border: 4px $background-color solid;
+    }
+
+    h3 {
+        background-color: $block-heading-color;
+        color: $block-bg-color;
+        font-size: 22px;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+.price {
+    background-color: $primary-color;
+    color: $block-bg-color;
+    padding: 20px;
+    text-align: center;
+
+    span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.features {
+    li {
+        line-height: 2em;
+        padding: 10px 0;
+        text-align: center;
+
+        &:nth-child(odd) {
+            background: $odd-background-color;
+        }
+    }
+
+    em {
+        font-weight: bold;
+    }
+}
+
+.btn {
+    border: $btn-border solid 1px;
+    border-radius: 5px;
+    display: block;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: $secondary-color;
+    color: $block-bg-color;
+}
+
+.btn-primary:hover {
+    background-color: $secondary-color-hover;
+    color: $block-bg-color;
+}
+
+.highlight {
+    border: $block-bg-color solid 4px;
+    height: 520px;
+    margin-top: -30px;
+
+    .btn {
+        margin-top: 7px;
+    }
+
+    li {
+        padding: 12px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    @import 'mobile';
+}

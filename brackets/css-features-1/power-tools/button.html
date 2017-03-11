@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title>Button</title>
+
+        <style>
+            .panel {
+                background: -webkit-gradient(linear, left top, left bottom, from(#bbbcbb), to(#959695));
+                background: -moz-linear-gradient(#bbbcbb, #959695);
+                background-color: #b7b9b7;
+                width: 200px;
+                height: 100px;
+            }
+            .button {
+                display: inline-block;
+                margin: 20px;
+
+                padding: 3px 6px;
+                font-family: 'Lucida Grande', Arial, sans-serif;
+                font-size: 13px;
+
+                border-radius: 3px;
+
+                border: 1px solid rgba(0, 0, 0, 0.6);
+                background-color: #c0c2c0;
+
+                text-shadow: rgba(255, 255, 255, 0.4) 0px 1px;
+                box-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+                cursor: default;
+            }
+            .button:active {
+                background: #B5B5B5;
+                box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+                            black 0px 1px 3px inset,
+                            rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+                text-shadow: rgba(255, 255, 255, 0.3) 0px 1px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="panel">
+            <div class="button">Button</div>
+        </div>
+    </body>
+</html>
+

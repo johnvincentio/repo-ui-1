@@ -1,0 +1,13 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+// Selector interpolation only works in 1.3.1+. Try it!
+@theGoodThings: ~".food, .sleep";
+
+@{theGoodThings} {
+    background-color: orange;
+    font-weight: bold;
+}

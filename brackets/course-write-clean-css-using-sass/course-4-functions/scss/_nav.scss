@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'mixins';
+
+nav {
+    @extend %center;
+    width: 550px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        float: left;
+
+        li {
+            display: none;
+            float: none;
+
+            a:hover {
+                background-color: $link-nav-bg-color-hover;
+            }
+        }
+
+        ul {
+            position: absolute;
+        }
+
+        &:hover li {
+            display: block;
+        }
+    }
+
+    a {
+        background-color: $link-nav-bg-color-default;
+        color: lighten($link-color, 25%);
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-nav-color-hover;
+        }
+    }
+}

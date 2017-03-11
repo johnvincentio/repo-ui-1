@@ -1,0 +1,58 @@
+body{
+	background:#000 url(../img/bg.jpg) repeat-x 0 0;
+	height:100%;
+}
+
+#container{
+	margin:270px auto;
+	width:1000px;
+	overflow:hidden;
+}
+
+#car-body{
+	background:url(../img/body.png) no-repeat;
+	width:490px;
+	height:170px;
+	margin:auto;
+}
+
+#wheel-front{
+	animation: GoWheel 5s linear 0s infinite;
+	-moz-animation: GoWheel 5s linear 0s infinite;
+	-webkit-animation: GoWheel 5s linear 0s infinite;
+	
+	background:url(../img/wheel.png) no-repeat;
+	float:left;
+	height:80px;
+	width:80px;
+	margin-left:279px;
+	margin-top:-75px;
+}
+
+#wheel-back{
+	animation: GoWheel 5s linear 0s infinite;
+	-moz-animation: GoWheel 5s linear 0s infinite;
+	-webkit-animation: GoWheel 5s linear 0s infinite;
+	
+	background:url(../img/wheel.png) no-repeat;
+	float:left;
+	height:80px;
+	width:80px;
+	margin-left:617px;
+	margin-top:-75px;
+}
+
+@keyframes GoWheel{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(-360deg)}
+}
+
+@-moz-keyframes GoWheel{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(-360deg)}
+}
+
+@-webkit-keyframes GoWheel{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(-360deg)}
+}

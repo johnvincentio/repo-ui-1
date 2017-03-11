@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <title>Linear Gradients - Multiple Color Stops</title>
+
+        <style>
+            div {
+                width: 300px;
+                height: 100px;
+                border: 2px solid #ddd;
+            }
+
+/* background: linear-gradient(direction, color-stop1, color-stop2, ...); */
+
+            .grad-1 {
+                background-color: red;    /* for older browsers */
+                background: -webkit-linear-gradient(red, yellow, green);
+                background: -o-linear-gradient(red, yellow, green);
+                background: linear-gradient(red, yellow, green);
+            }
+            .grad-2 {
+                background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+            }
+            .grad-3 {
+                background: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="grad-1">background: linear-gradient(red, yellow, green)</div>
+        <div class="grad-2">background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);</div>
+        <div class="grad-3">to top, red,orange,yellow,green,blue,indigo,violet)</div>
+    </body>
+</html>

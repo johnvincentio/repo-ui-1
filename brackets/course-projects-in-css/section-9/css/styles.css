@@ -1,0 +1,129 @@
+/* line 2, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/_placeholders.scss */
+.wheel-front, .wheel-back {
+  -webkit-animation: rotate-wheel 5s linear 0s infinite;
+  -moz-animation: rotate-wheel 5s linear 0s infinite;
+  -o-animation: rotate-wheel 5s linear 0s infinite;
+  animation: rotate-wheel 5s linear 0s infinite;
+  background: url("../img/wheel.png") no-repeat;
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 6, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/styles.scss */
+body {
+  -webkit-animation: move-background 10s linear infinite;
+  -moz-animation: move-background 10s linear infinite;
+  -o-animation: move-background 10s linear infinite;
+  animation: move-background 10s linear infinite;
+  background: url("../img/bg.jpg") repeat-x 0 0;
+  height: 100%;
+}
+
+/* line 12, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/styles.scss */
+.container {
+  margin: 270px auto;
+  overflow: hidden;
+  width: 1000px;
+}
+
+/* line 18, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/styles.scss */
+.car-body {
+  background: url("../img/body.png") no-repeat;
+  height: 170px;
+  margin: auto;
+  width: 490px;
+}
+
+@-webkit-keyframes rotate-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes rotate-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-o-keyframes rotate-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes move-background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@-moz-keyframes move-background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@-o-keyframes move-background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes move-background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* line 35, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/styles.scss */
+.wheel-front {
+  margin-left: 279px;
+  margin-top: -75px;
+}
+
+/* line 41, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/styles.scss */
+.wheel-back {
+  margin-left: 617px;
+  margin-top: -75px;
+}
+
+/* line 47, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-9/scss/styles.scss */
+.pause {
+  animation-play-state: paused !important;
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

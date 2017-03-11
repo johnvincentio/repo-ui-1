@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .ul-1 {
+            list-style-image: url('../images/sqpurple.gif');
+        }
+        .ul-2 {
+            list-style-type: circle;    /* will show a circle */
+            list-style-image: url('../images/invalid.gif');    /* image does not exist */
+        }
+        .ul-3 {
+            list-style-type: circle;
+            list-style-image: url('../images/sqpurple.gif');    /* image takes precedence */
+        }
+
+        .ul-4 li {
+            list-style-position: inside;
+            border: 2px solid #ccc;
+        }
+
+        .ul-5 li {
+            list-style-position: outside;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="ul-1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="ul-2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="ul-3">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="ul-4">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="ul-5">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+</body>
+
+</html>

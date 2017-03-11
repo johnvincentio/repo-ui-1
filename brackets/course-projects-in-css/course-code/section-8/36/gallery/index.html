@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Image Gallery</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-buttons.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox({
+				helpers:{
+					buttons:{}
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="img/logo.png" class="logo">
+		</div>
+	</header>
+	<div class="container">
+		<section>
+			<div class="gallery">
+				<a class="fancybox" data-fancybox-group="gallery" href="img/image1.jpg"><img src="img/image1.jpg"></a>
+				<a class="fancybox" data-fancybox-group="gallery" href="img/image2.jpg"><img src="img/image2.jpg"></a>
+				<a class="fancybox" data-fancybox-group="gallery" href="img/image3.jpg"><img src="img/image3.jpg"></a>
+				<a class="fancybox" data-fancybox-group="gallery" href="img/image4.jpg"><img src="img/image4.jpg"></a>
+				<a class="fancybox" data-fancybox-group="gallery" href="img/image5.jpg"><img src="img/image5.jpg"></a>
+				<a class="fancybox" data-fancybox-group="gallery" href="img/image6.jpg"><img src="img/image6.jpg"></a>
+			</div>
+		</section>
+		<aside>
+			<nav>
+				<a data-rel="all" href="javascript;">View all</a>
+				<a data-rel="category1" href="javascript;">Category 1</a>
+				<a data-rel="category2" href="javascript;">Category 2</a>
+			</nav>
+		</aside>
+	</div>
+	<footer>
+		<div class="container">
+			<p>Copyright &copy; 2014</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.object{
+				width:150px;
+				height:150px;
+				position:relative;
+				background:#000;
+				-webkit-animation:objectmove 20s infinite;
+				animation: objectmove 5s infinite;
+			}
+			
+			@-webkit-keyframes objectmove{
+				0% 		{top:0px;left:0px;background:#000;}
+				25% 	{top:0px;left:300px;background:red;}
+				50% 	{top: 300px;left:300px;background:blue;}
+				75% 	{top: 300px;left:0;background:green;}
+				100% 	{top:0px;left:0px;background:#000;}
+			}
+			
+			@keyframes objectmove{
+				0% 		{top:0px;left:0px;}
+				25% 	{top:0px;left:300px;}
+				50% 	{top: 300px;left:300px;}
+				75% 	{top: 300px;left:0;}
+				100% 	{top:0px;left:0px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="object"></div>
+	</body>
+</html>

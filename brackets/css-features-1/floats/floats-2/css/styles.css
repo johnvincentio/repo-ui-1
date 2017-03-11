@@ -1,0 +1,27 @@
+body {
+    background-color: #1D1F1F;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.user {
+    width: 400px;
+    height: 165px;
+    margin: 2em 0;
+    border: 3px solid #E18728;
+    border-radius: 10px;
+    background-color: white;
+}
+
+img {
+    padding: .5em;
+    float: left;
+}
+
+a {
+    display: block;
+}

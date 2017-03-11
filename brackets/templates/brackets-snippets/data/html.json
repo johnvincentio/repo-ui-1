@@ -1,0 +1,65 @@
+[
+    {
+        "name": "basic_html5",
+        "trigger": "basic_html5",
+        "usage": "basic_html5",
+        "description": "Create a basic HTML5 page",
+        "template": "basic_html5.snippet"
+    },
+    {
+        "name": "html5",
+        "trigger": "html5",
+        "usage": "html5",
+        "description": "Create an HTML5 page",
+        "template": "html5.snippet"
+    },
+    {
+        "name": "html5_1",
+        "trigger": "html5_1",
+        "usage": "html5_1",
+        "description": "Create another HTML5 page",
+        "template": "html5_1.snippet"
+    },
+    {
+        "name": "html5_form",
+        "trigger": "html5_form",
+        "usage": "html5_form",
+        "description": "Create HTML5 page for form input",
+        "template": "html5_form.snippet"
+    },
+    {
+        "name": "jv_css",
+        "trigger": "jv_css",
+        "usage": "jv_css",
+        "description": "Create Basic CSS",
+        "template": "jv_css.snippet"
+    },
+    {
+        "name": "float_grid",
+        "trigger": "float_grid",
+        "usage": "float_grid",
+        "description": "Create Basic Float Grid",
+        "template": "float_grid.snippet"
+    },
+    {
+        "name": "queries",
+        "trigger": "queries",
+        "usage": "queries",
+        "description": "Create Basic Media Queries CSS",
+        "template": "queries.snippet"
+    },
+    {
+        "name": "SASS",
+        "trigger": "SASS",
+        "usage": "SASS",
+        "description": "Create Basic SASS CSS",
+        "template": "sass.snippet"
+    },
+    {
+        "name": "link",
+        "trigger": "a",
+        "usage": "a index.html home",
+        "description": "Create an achor with an href",
+        "template": "<a href=\"$${href}\">$${title}</a>"
+    }
+]

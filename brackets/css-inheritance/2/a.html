@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <title>CSS Inheritance Property</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+.parent-image  {
+    width: 30em;
+    height: 30em;
+    background-image: url("../images/img1.jpg");
+    background-repeat: no-repeat;
+}
+
+.parent-image h4 {
+    color: gray;
+    text-align: center;
+    line-height: 1.5em;		/* vertically align text in the center */
+    padding: 1em;			/* just to differentiate the two elements */
+}
+
+.child-image {
+    width: inherit;					/* inherited width */
+    height: inherit;				/* inherited height */
+    background-image: inherit;		/* inherited background */
+    background-repeat: inherit;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="parent-image">
+    <h4>Everything you can imagine is real.<br>-The Parent Image</h4>
+
+    <div class="child-image">
+    <h4>Glad to have looked after you.<br>-The Child Image</h4>
+
+    </div><!-- end child image -->
+</div><!-- end parent image -->
+
+</body>
+
+</html>

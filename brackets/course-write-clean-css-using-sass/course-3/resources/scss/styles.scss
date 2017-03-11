@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'setup';
+
+nav {
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        background-color: $link-nav-color-default;
+        color: $link-color;
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-nav-color-hover;
+        }
+    }
+
+    li {
+        display: block;
+        float: left;
+
+        li {
+            display: none;
+            float: none;
+
+            a:hover {
+                background-color: $link-nav-bg-color-hover;
+            }
+        }
+
+        &:hover li {
+            display: block;
+        }
+    }
+}

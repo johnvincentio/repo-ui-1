@@ -1,0 +1,59 @@
+@import "_mixins.scss";
+@import "_functions.scss";
+
+nav 
+{
+    width: 550px;
+    @extend %center;
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li
+    {
+        display: block;
+        float: left;
+        
+        li
+        {
+            display: none;
+            float: none;
+            
+            a:hover
+            {
+                background-color: $link-nav-bg-color-hover;
+            }
+        }
+        ul
+        {
+            position: absolute;
+        }
+        &:hover li
+        {
+            display: block;
+        }
+    }
+    a
+    {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        background-color: $link-nav-bg-color-default;
+        color: automaticContrast($link-nav-bg-color-default, $link-color);
+        &:hover
+        {
+            color: $link-nav-color-hover;
+        }
+    }
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-15, 21:32:17
+    Author     : Arek
+*/
+

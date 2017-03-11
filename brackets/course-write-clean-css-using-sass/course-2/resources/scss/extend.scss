@@ -1,0 +1,31 @@
+$message-color: #333;
+$message-border-color: #ccc;
+$my-color-green: #080;
+$my-color-red: #f00;
+$my-color-yellow: #ff0;
+
+// Use a placeholder, not a class.
+%message-style {
+    border: 1px solid $message-border-color;
+    color: $message-color;
+    padding: 10px;
+}
+
+.message {
+    @extend %message-style;
+}
+
+.success {
+    @extend %message-style;
+    border-color: $my-color-green;
+}
+
+.error {
+    @extend %message-style;
+    border-color: $my-color-red;
+}
+
+.warning {
+    @extend %message-style;
+    border-color: $my-color-yellow;
+}

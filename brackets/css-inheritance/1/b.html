@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <title>CSS Inheritance Property</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body {
+    font-family: "Aller","sans-serif";
+}
+
+.parent {
+    width: 15em;
+    height: 5em;
+    color: gray;
+    font-weight: bold;
+    font-size: 2em;
+    border: 0.1em solid red;
+}
+
+.parent span {
+    color: green;
+}
+
+.parent a {				/* you can refer even to the child class */
+    color: inherit;		/* inherited color from the parent class */
+}
+
+.child {
+    border: inherit;	/* inherited the border attributes to child and elements inside */
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML SECTION -->
+
+    <div class="parent"> This is a <span>parent</span> element.
+
+        <div class="child">This is a <span>child</span> element.
+
+            <p>This is a <a href="#">link</a> inside a paragraph</p>
+
+        </div>
+        <!-- end child element -->
+    </div>
+    <!-- end parent element -->
+
+</body>
+
+</html>

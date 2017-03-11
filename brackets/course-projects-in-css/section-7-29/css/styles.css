@@ -1,0 +1,161 @@
+/* line 3, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+body {
+  background-color: #242e30;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+ul,
+li {
+  list-style: none;
+}
+
+/* line 18, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 20, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+em {
+  color: #3c8b9c;
+  font-style: bold;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+#container {
+  margin: 50px auto;
+  max-width: 900px;
+  width: 900px;
+}
+
+/* line 31, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.tbl-block {
+  background-color: #fff;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 1%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 23%;
+}
+
+/* line 46, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.tbl-block:hover {
+  border: 4px #242e30 solid;
+}
+
+/* line 50, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.tbl-block h3 {
+  background-color: #333;
+  color: #fff;
+  font-size: 22px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* line 59, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.price {
+  background-color: #3c8b9c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 65, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.price span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* line 72, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.features li {
+  line-height: 2em;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 77, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.features li:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+/* line 82, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.features em {
+  font-weight: bold;
+}
+
+/* line 87, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.btn {
+  border: #ccc solid 1px;
+  border-radius: 5px;
+  display: block;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  text-align: center;
+}
+
+/* line 97, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.btn-primary {
+  background-color: #6fbf44;
+  color: #fff;
+}
+
+/* line 102, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.btn-primary:hover {
+  background-color: #65a443;
+  color: #fff;
+}
+
+/* line 107, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.highlight {
+  border: #fff solid 4px;
+  height: 520px;
+  margin-top: -30px;
+}
+
+/* line 112, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.highlight .btn {
+  margin-top: 7px;
+}
+
+/* line 116, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/styles.scss */
+.highlight li {
+  padding: 12px !important;
+}
+
+@media (max-width: 768px) {
+  /* line 3, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/_mobile.scss */
+  #container {
+    width: 80%;
+  }
+  /* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/_mobile.scss */
+  .tbl-block {
+    float: none;
+    width: 100%;
+  }
+  /* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/_mobile.scss */
+  .tbl-block:hover {
+    border: 0;
+  }
+  /* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/_mobile.scss */
+  .highlight {
+    border: 0;
+    height: auto;
+    margin-top: 0;
+  }
+  /* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-projects-in-css/section-7-29/scss/_mobile.scss */
+  .highlight .btn {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

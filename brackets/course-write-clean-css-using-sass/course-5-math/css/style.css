@@ -1,0 +1,146 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-11-20, 15:16:16
+    Author     : Arek
+*/
+/* line 4, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav {
+  width: 550px;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 13, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav
+li {
+  display: block;
+  float: left;
+}
+
+/* line 18, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav
+li
+li {
+  display: none;
+  float: none;
+}
+
+/* line 23, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav
+li
+li
+a:hover {
+  background-color: blue;
+}
+
+/* line 28, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav
+li
+ul {
+  position: absolute;
+}
+
+/* line 32, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav
+li:hover li {
+  display: block;
+}
+
+/* line 38, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  background-color: green;
+  color: #ffdb99;
+}
+
+/* line 44, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_nav.scss */
+nav a:hover {
+  color: white;
+}
+
+/* line 2, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_placeholders.scss */
+nav, p {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/_placeholders.scss */
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 7, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+#header {
+  height: 150px;
+}
+
+/* line 11, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+h1 {
+  color: orange;
+  font-size: 28px;
+}
+
+/* line 16, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+h2 {
+  color: orange;
+  font-size: 21px;
+}
+
+/* line 21, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+a {
+  color: orange;
+}
+
+/* line 25, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+p {
+  background-color: #000;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFC), to(#000));
+  background-image: -webkit-linear-gradient(left, #FFC, #000);
+  background-image: -moz-linear-gradient(left, #FFC, #000);
+  background-image: -ms-linear-gradient(left, #FFC, #000);
+  background-image: -o-linear-gradient(left, #FFC, #000);
+  background-image: linear-gradient(left, #FFC, #000);
+  background-repeat: repeat-x;
+  clear: left;
+  height: 50px;
+  width: 200px;
+}
+
+/* line 35, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+.image {
+  width: 14.66667%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background-color: #ececec;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 44, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+.image img {
+  width: 100%;
+}
+
+/* line 48, /Users/jv/Desktop/MyDevelopment/repo_ui_1/brackets/course-write-clean-css-using-sass/test-5-math/scss/style.scss */
+.image .image-description {
+  color: #555;
+}
+
+/*# sourceMappingURL=style.css.map */

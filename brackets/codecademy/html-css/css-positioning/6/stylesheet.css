@@ -1,0 +1,22 @@
+div {
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#inner {
+    height: 75px;
+    width: 75px;
+    background-color: #547980;
+    position: absolute;
+    margin-left: 20px;
+}
+
+#outer {
+    height: 150px;
+    width: 150px;
+    background-color: #45ADA8;
+    margin-left: 100px;
+    position: absolute;
+}
