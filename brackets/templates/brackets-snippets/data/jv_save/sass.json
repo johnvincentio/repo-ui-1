@@ -1,9 +1,0 @@
-[
-    {
-        "name": “sass”,
-        "trigger": “sass”,
-        "usage": “sass”,
-        "description": "Create Basic SASS”,
-        "template": “sass.snippet"
-    }
-]

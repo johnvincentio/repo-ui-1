@@ -1,9 +1,0 @@
-[
-    {
-        "name": “queries”,
-        "trigger": “queries”,
-        "usage": “queries”,
-        "description": "Create Basic Queries CSS”,
-        "template": “queries.snippet"
-    }
-]
