@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding-left: 0.5em;
+        }
+
+        .handle {
+            background: transparent url(images/spacer.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            display: block;
+            float: left;
+            width: 50px;
+            height: 51px;
+/*
+            width: 10px;
+            height: 11px;
+*/
+        }
+
+        .collapsed {
+            background: url(images/plus-black.png);
+//            background: transparent url(images/plus-black.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            cursor: pointer;
+        }
+
+        .expanded {
+            background: transparent url(images/minus-black.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="tree">
+        <li>1
+            <ul>
+                <li>1.1
+                    <ul>
+                        <li>1.1.1</li>
+                        <li>1.1.2</li>
+                    </ul>
+                </li>
+                <li>1.2
+                    <ul>
+                        <li>1.2.1</li>
+                        <li>1.2.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $(document).ready(function() {
+            jQuery("#tree ul").hide();
+
+            jQuery("#tree li").each(function() {
+                var handleSpan = jQuery("<span></span>");
+                handleSpan.addClass("handle");
+                handleSpan.prependTo(this);
+
+                if (jQuery(this).has("ul").size() > 0) {
+                    handleSpan.addClass("collapsed");
+                    handleSpan.click(function() {
+                        var clicked = jQuery(this);
+                        clicked.toggleClass("collapsed expanded");
+                        clicked.siblings("ul").toggle();
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

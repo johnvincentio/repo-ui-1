@@ -1,0 +1,22 @@
+<html>
+    <head>
+<style>
+.answer,
+#show,
+#hide:target {
+    display: none;
+}
+
+#hide:target + #show,
+#hide:target ~ .answer {
+    display: inline;
+}
+</style>
+
+    </head>
+    <body>
+<a href="#hide" id="hide">Show</a>
+<a href="#show" id="show">Hide</a>
+<div class="answer"><p>Answer</p></div>
+    </body>
+</html>

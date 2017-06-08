@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+.container {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.container div {
+    width:100%;
+}
+.container .header {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container .content {
+    display: none;
+    padding : 5px;
+}
+        </style>
+    </head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<div class="container">
+    <div class="header"><span>Expand</span>
+
+    </div>
+    <div class="content">
+        <ul>
+            <li>I'm putting a search bar here.</li>
+
+        </ul>
+    </div>
+</div>
+<button>another click</button>
+
+<script>
+$(".header").click(function() {
+  $('.content').slideToggle().toggleClass('active');
+  if ($('.content').hasClass('active')) {
+    $('.header span').text('Collapse');
+  } else {
+    $('.header span').text('Expand');
+  }
+});
+$('button').click(function(){
+    $(".header").trigger('click');
+})
+</script>
+
+</body>
+</html>

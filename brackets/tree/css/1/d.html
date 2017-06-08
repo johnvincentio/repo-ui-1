@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <title>css tree</title>
+        <style>
+* {font-family: "Segoe UI", Tahoma;}
+ul.nav {border-bottom: 1px solid #999;}
+ul.nav li a {display: block; text-decoration: none; color: #333; padding: 5px; border: 1px solid #fff;}
+ul.nav > li:hover {border: 1px solid #666; border-bottom: 1px solid #fff;}
+ul.nav li a:hover {background: #ccc; border: 1px solid #999;}
+ul.nav > li {display: inline-block; position: relative; border: 1px solid #fff;}
+ul.nav > li ul {display: none; position: absolute; left: -1px; width: 150px; border: 1px solid #666; border-top-color: #fff; margin-top: 1px;}
+ul.nav > li:hover ul {display: block;}
+ul.nav > li ul li {display: block;} /* Vertical Menu */
+ul.nav > li ul li {display: inline-block;} /* Horizontal Menu */
+        </style>
+    </head>
+    <body>
+<ul class="nav">
+    <li>
+        <a href="#">Menu 1</a>
+        <ul>
+            <li><a href="#">Sub Menu Item</a></li>
+            <li><a href="#">Sub Menu Item</a></li>
+            <li><a href="#">Sub Menu Item</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Menu 2</a>
+        <ul>
+            <li><a href="#">Sub Menu Item</a></li>
+            <li><a href="#">Sub Menu Item</a></li>
+            <li><a href="#">Sub Menu Item</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Menu 3</a>
+        <ul>
+            <li><a href="#">Sub Menu Item</a></li>
+            <li><a href="#">Sub Menu Item</a></li>
+            <li><a href="#">Sub Menu Item</a></li>
+        </ul>
+    </li>
+</ul>
+    </body>
+</html>

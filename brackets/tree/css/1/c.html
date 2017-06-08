@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>try a tree</title>
+
+<style>
+
+   ul.tree, ul.tree ul {
+     list-style-type: none;
+     background: url(vline.png) repeat-y;
+     margin: 0;
+     padding: 0;
+   }
+
+   ul.tree ul {
+     margin-left: 10px;
+   }
+
+   ul.tree li {
+     margin: 0;
+     padding: 0 12px;
+     line-height: 20px;
+     background: url(node.png) no-repeat;
+     color: #369;
+     font-weight: bold;
+   }
+
+   ul.tree li:last-child {
+     background: #fff url(lastnode.png) no-repeat;
+   }
+
+</style>
+
+</head>
+
+<body>
+    <div>
+        <ul class="tree">
+            <li>Animals
+                <ul>
+                    <li>Birds</li>
+                    <li>Mammals
+                        <ul>
+                            <li>Elephant</li>
+                            <li>Mouse</li>
+                        </ul>
+                    </li>
+                    <li>Reptiles</li>
+                </ul>
+            </li>
+            <li>Plants
+            <ul>
+                <li>Flowers
+                    <ul>
+                        <li>Rose</li>
+                        <li>Tulip</li>
+                    </ul>
+                </li>
+                <li>Trees</li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
