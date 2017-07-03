@@ -1,0 +1,83 @@
+<html>
+<header>
+    <style>
+        html {
+            height: 100%;
+            box-sizing: border-box;
+            /* https://css-tricks.com/box-sizing/ */
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+            /* https://css-tricks.com/box-sizing/ */
+        }
+
+        body {
+            margin: 0;
+            min-height: 100%;
+            display: flex;
+            /* body is the outer flex container */
+            flex-flow: row wrap;
+            text-align: center;
+        }
+
+        #inner-flex-container {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 250px);
+            order: 1;
+        }
+
+        aside {
+            flex: 1 250px;
+            order: 0;
+            background: hotpink;
+        }
+
+        header {
+            flex: 1;
+            order: 0;
+            background: tomato;
+        }
+
+        section {
+            flex: 4;
+            order: 1;
+            background: deepskyblue;
+        }
+
+        footer {
+            flex: 1;
+            order: 2;
+            background: lightgreen;
+        }
+
+        @media screen and ( max-width: 500px) {
+            body {
+                flex-direction: column;
+            }
+            aside {
+                flex: 1;
+                order: 2;
+            }
+            #inner-flex-container {
+                width: 100%;
+                flex: 1;
+            }
+        }
+    </style>
+
+</header>
+
+<body>
+    <aside>aside</aside>
+    <div id="inner-flex-container">
+        <header>header</header>
+        <section>section</section>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
