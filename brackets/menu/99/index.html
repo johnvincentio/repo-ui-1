@@ -1,0 +1,218 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A set of horizontal menus that switch to vertical
+    and which hide at small window widths.">
+    <title>Responsive Horizontal-to-Vertical Menu &ndash; Layout Examples &ndash; Pure</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-41480445-1', 'purecss.io');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<!--<![endif]-->
+
+<style>
+.custom-wrapper {
+    background-color: #ffd390;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+    height: 14em;
+}
+
+.custom-menu-2 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+    .custom-menu-2 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
+</style>
+<div class="custom-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu">
+            <a href="#" class="pure-menu-heading custom-brand">Brand</a>
+            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu pure-menu-horizontal custom-menu-2 custom-can-transform">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+(function (window, document) {
+var menu = document.getElementById('menu'),
+    WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+function toggleHorizontal() {
+    [].forEach.call(
+        document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+        function(el){
+            el.classList.toggle('pure-menu-horizontal');
+        }
+    );
+};
+
+function toggleMenu() {
+    // set timeout so that the panel has a chance to roll up
+    // before the menu switches states
+    if (menu.classList.contains('open')) {
+        setTimeout(toggleHorizontal, 500);
+    }
+    else {
+        toggleHorizontal();
+    }
+    menu.classList.toggle('open');
+    document.getElementById('toggle').classList.toggle('x');
+};
+
+function closeMenu() {
+    if (menu.classList.contains('open')) {
+        toggleMenu();
+    }
+}
+
+document.getElementById('toggle').addEventListener('click', function (e) {
+    toggleMenu();
+    e.preventDefault();
+});
+
+window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+})(this, this.document);
+
+</script>
+
+<style>
+.main {
+    padding: 2em;
+    color: black;
+}
+</style>
+
+<div class="main">
+
+    <h1>Responsive Horizontal-to-Vertical Menu</h1>
+
+    <p>This example shows how you can build upon Pure Menu and Grid classes. At wide
+    window-widths we display a horizontal menu.
+    At smaller window-widths,
+    we switch to a vertical menu with a toggle control. Grids are used to
+    arrange the menus.
+    Code reproduced below:</p>
+
+    <p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati odio mollitia quam nesciunt, fuga neque eaque accusantium magni dolore aliquam repellat ex, cum consectetur hic alias eveniet autem earum sunt.</span>
+    <span>Expedita iusto delectus pariatur labore repellat ea rem quos, perspiciatis non, aliquam quisquam vitae aperiam earum sequi iure ipsam quo officia laboriosam soluta consequatur numquam eaque ipsa! Beatae, blanditiis, commodi.</span>
+    <span>Accusantium temporibus at, id, laborum itaque quae error neque architecto natus unde fugit deserunt voluptates minus cupiditate aut debitis ducimus voluptatum maiores cum soluta fuga facilis autem reiciendis! Impedit, praesentium!</span>
+    <span>Quos cum a rerum! Doloribus officiis, tempora dignissimos quibusdam maxime ad aspernatur dolorum fugiat nesciunt similique ab, suscipit ullam expedita numquam laborum amet sit libero porro esse. Sequi, error, eius!</span>
+    <span>Autem soluta nisi odit, sint veritatis fuga libero eius sapiente perferendis quo alias sequi cum, veniam, commodi quis iure voluptas explicabo! In sit nesciunt, odio placeat vitae itaque impedit eaque.</span>
+    <span>Fugiat vitae, nostrum magni. Fugiat impedit laborum consectetur debitis dicta? Non minima dolorum rerum perferendis, explicabo ad! Animi illum ipsam eum exercitationem, mollitia ut impedit officia tenetur commodi ad repellendus.</span>
+    <span>Molestias natus voluptatem tempora sit vel iusto velit recusandae quidem quo, omnis nesciunt, possimus quis mollitia voluptatum! Sed, neque, quia! Porro quod nemo nam provident illum eos, facere cupiditate pariatur.</span>
+    <span>Architecto nemo earum molestias placeat ea accusantium consequuntur dignissimos debitis, quas vel tenetur minus error porro voluptatem sapiente veniam officia eveniet odio repellat, hic iure! Quasi recusandae ab, minus delectus.</span>
+    <span>Cum vel, voluptates necessitatibus expedita optio autem aliquam laborum nisi corporis aspernatur enim magnam sunt, voluptate, impedit voluptas. Repellendus aspernatur maxime minus consequuntur dolores voluptates accusamus. Fugit saepe numquam voluptates.</span>
+    <span>Nihil labore neque nemo, perspiciatis necessitatibus eaque aspernatur doloremque modi dolore totam maxime reprehenderit itaque delectus, inventore soluta dignissimos expedita excepturi minus nulla. Voluptatibus quia sapiente vero ratione molestiae aperiam.</span>
+    <span>Sint fuga impedit, voluptatum odit maxime ipsa deserunt aspernatur debitis ut veritatis enim illum eos, exercitationem, deleniti dolores aliquam, suscipit ad! Deserunt voluptatem cupiditate praesentium alias neque consequuntur facere, quis.</span>
+    <span>Quasi id soluta corrupti, veniam beatae aperiam dicta eligendi aspernatur provident porro facere aut nihil laborum incidunt, inventore ullam. Dicta, vitae. Quisquam, quod, id? Beatae, neque ex perspiciatis eius blanditiis.</span>
+    <span>Ipsam quae recusandae, dolorum repellendus dicta, tempore enim reiciendis eaque minima similique beatae! Earum vero excepturi voluptate obcaecati non quam nisi, animi in veritatis tenetur. Itaque ea cupiditate, obcaecati numquam.</span>
+    <span>Ea ullam eos quod aliquam tenetur corrupti, nostrum nulla sapiente magni eligendi sed eveniet quos dolor vel voluptatibus vero eaque, quia excepturi, reprehenderit alias aut iste? Alias quod iure ea!</span>
+    <span>Magnam, et voluptates animi quis iure iusto quos voluptatum modi hic ipsum quae placeat eligendi, consequuntur molestiae eos earum ab aperiam quisquam qui recusandae error minima eveniet officia. Quis, tempora!</span>
+    <span>Laudantium autem delectus blanditiis, culpa fuga quas. Quae ipsam deleniti, voluptatem, rerum quas, expedita unde deserunt possimus doloremque, illum veniam. Atque officia cupiditate delectus, fugiat a sit aut esse minus!</span>
+    <span>Excepturi harum saepe beatae aperiam sequi dignissimos laboriosam porro illo deleniti consequuntur aliquam facere itaque, quibusdam animi nemo, ipsam? Aperiam doloribus assumenda in natus molestias repudiandae eius nihil quaerat explicabo.</span>
+    <span>Iusto error ab labore eligendi voluptas accusamus esse voluptate, quae similique nihil quisquam blanditiis, quis porro dolorum corporis sint alias pariatur unde minus facere. Quibusdam cupiditate ea beatae laborum, possimus.</span>
+    <span>At minus atque recusandae officia, aliquid quisquam repellat ex, hic fugit. Suscipit dolor cupiditate non. Commodi, nesciunt quod animi corporis, modi optio non facere iusto rerum dicta. Vero, rerum, minima.</span>
+    <span>Numquam sed, temporibus nisi molestias vitae delectus odio similique, eaque doloribus fugiat pariatur illum ipsa, eum rem! Laudantium vitae beatae minus voluptatibus. Beatae illum ad labore id voluptatem, asperiores nobis.</span>
+    </p>
+</div>
+
+
+</body>
+</html>
