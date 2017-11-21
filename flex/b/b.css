@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: gray;
+}
+.header {background: coral;}
+.footer {background: lightgreen;}
+.sidebar-left {background: moccasin;}
+.splitter {background: violet;}
+
+.sidebar-left {order: 2;}
+.splitter{order: 3;}
+.main {order: 5;}
+.footer {order: 7;}
+.header {order: 1;}
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container>* {
+    padding: 10px;
+    min-height: 60px;
+    flex: 1 100%;
+}
+
+.splitter {
+/*    display: none;*/
+}
+
+.main {
+    text-align: left;
+    background: cornflowerblue;
+}
+
+/*
+    .horizontal {
+  flex-direction:row;
+  background-color: red;
+}
+
+.vertical {
+  flex-direction:column;
+}
+*/
+
+@media all and (min-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .sidebar-left {
+        flex: 1 auto;
+    }
+
+
+}
+
+@media all and (min-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+    .sidebar-left {
+        flex: 2 auto;
+    }
+    .splitter {
+        flex: none;
+        width: 17px;
+        cursor: col-resize;
+        background: #535353;
+        background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;
+    }
+    .splitter {
+/*
+        display: flex;
+        flex: 1 0px;
+*/
+    }
+    .main {
+        flex: 7 0px;
+    }
+}
+
+/*
+@media all and (min-width: 800px) {
+body {
+    background-color: lightblue;
+}
+    .main {
+        flex: 3 0px;
+    }
+    .aside1 {order: 1;}
+    .aside2 {order: 2;}
+    .main {order: 3;}
+
+    .footer {order: 4;}
+}
+*/

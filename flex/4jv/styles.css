@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+.page {
+  height: 100%; /* needed for proper layout */
+}
+
+body {
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.page {
+  display: flex;
+	flex-direction: column;
+	/* min-height: calc(100vh - 40vh); */
+}
+
+header, footer, article, nav, aside {
+	padding: 1em;
+}
+header, footer {
+	background: yellowgreen;
+	text-align: center;
+	/* height: 20vh; */
+}
+
+header {
+  flex: 0 0 auto;
+  background-color: #dcdcdc;
+}
+
+footer {
+  flex: 0 0 auto;
+  background-color: #dcdcdc;
+}
+
+.page-content {
+  flex: 1 1 auto;
+  position: relative;/* need this to position inner content */
+  overflow-y: auto;
+}
+
+
