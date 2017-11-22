@@ -47,7 +47,7 @@ footer {
 	overflow-y: auto;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 #main > article {
@@ -62,35 +62,9 @@ footer {
 	order: -1;
 }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (max-width: 580px) {
 	#main {
-		flex-direction: row;
+		flex-direction: column;
 	}
 }
 
-.navigation {
-  list-style: none;
-  margin: 0; 
-  
-  background: deepskyblue;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-}
-
-.navigation a:hover {
-  background: darken(deepskyblue, 2%);
-}
