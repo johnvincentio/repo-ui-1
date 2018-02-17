@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo For Simple Accordion Menu with CSS3 Transitions</title>
+<style>
+@charset "utf-8";
+
+/* ---------------------------------------------
+ Common Set 
+--------------------------------------------- */
+
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+html * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 190px;
+  background-color: #fff;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 12px; /* rem非対応ブラウザ用 */
+  font-size: 1.2rem; /* rem対応ブラウザの為に上書き指定 */
+  line-height: 1.4;
+  text-align: center;
+  -webkit-text-size-adjust: 100%; /* Chromeちゃんが気分次第でフォントサイズおかしくしちゃうので対処 */
+  color: #333;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #C63;
+}
+
+a:hover,
+a:active { text-decoration: none; }
+
+h1 {
+  margin: 20px auto 10px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.ref { margin: 0 auto 20px; }
+
+/* ---------------------------------------------
+ Menu 
+--------------------------------------------- */
+
+
+.menu {
+  margin: 0 auto;
+  padding: 0;
+  width: 350px;
+}
+
+.menu li { list-style: none; }
+
+.menu li a {
+  display: table;
+  margin-top: 1px;
+  padding: 14px 10px;
+  width: 100%;
+  background: #337D88;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: middle;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:first-child a { margin-top: 0; }
+
+.menu li a:hover {
+  background: #4AADBB;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.menu li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li li a {
+  display: block;
+  margin-top: 0;
+  padding: 0 10px;
+  height: 0;
+  background: #C6DDD9;
+  color: #1F3D39;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:hover li a {
+  display: table;
+  margin-top: 1px;
+  padding: 10px;
+  width: 100%;
+  height: 1em;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:hover li a:hover {
+  background: #A4CAC8;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+</style>
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 style="margin-top:150px;">Demo For Simple Accordion Menu with CSS3 Transitions</h1>
+<nav id="menu_box">
+  <ul class="menu">
+    <li> <a href="#">Menu 1</a>
+      <ul>
+        <li><a href="#">Menu 1.1</a></li>
+        <li><a href="#">Menu 1.2</a></li>
+      </ul>
+    </li>
+    <li> <a href="#">Menu 2</a>
+      <ul>
+        <li><a href="#">Menu 2.1</a></li>
+        <li><a href="#">Menu 2.2</a></li>
+        <li><a href="#">Menu 2.3</a></li>
+      </ul>
+    </li>
+    <li> <a href="#">Menu 3</a>
+      <ul>
+        <li><a href="#">Menu 3.1</a></li>
+        <li><a href="#">Menu 3.2</a></li>
+        <li><a href="#">Menu 3.3</a></li>
+        <li><a href="#">Menu 3.4</a></li>
+      </ul>
+    </li>
+    <li> <a href="#">Menu 4</a> </li>
+  </ul>
+</nav>
+</body>
+</html>
