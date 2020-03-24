@@ -80,19 +80,49 @@ body {
 }
 
 .piece:first-child {
-  -webkit-animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left;
-  -moz-animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left;
-  -ms-animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left;
-  -o-animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left;
-  animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left;
+  -webkit-animation-name: left;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: left;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -o-animation-name: left;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .piece:last-child {
-  -webkit-animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right;
-  -moz-animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right;
-  -ms-animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right;
-  -o-animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right;
-  animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right;
+  -webkit-animation-name: right;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-name: right;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -o-animation-name: right;
+  -o-animation-duration: 1s;
+  -o-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: alternate;
+  animation-name: right;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes left {

@@ -16,6 +16,32 @@
   animation: #{$str};
 }
 
+@mixin animation($animation, $duration, $timing, $iteration, $direction) {
+  -webkit-animation-name: $animation;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-timing-function: $timing;
+  -webkit-animation-iteration-count: $iteration;
+  -webkit-animation-direction: $direction;
+
+  -moz-animation-name: $animation;
+  -moz-animation-duration: $duration;
+  -moz-animation-timing-function: $timing;
+  -moz-animation-iteration-count: $iteration;
+  -moz-animation-direction: $direction;
+
+  -o-animation-name: $animation;
+  -o-animation-duration: $duration;
+  -o-animation-timing-function: $timing;
+  -o-animation-iteration-count: $iteration;
+  -o-animation-direction: $direction;
+
+  animation-name: $animation;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+  animation-iteration-count: $iteration;
+  animation-direction: $direction;
+}
+
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
