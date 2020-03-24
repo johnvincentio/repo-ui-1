@@ -63,14 +63,12 @@ body {
   width: 2vw;
   height: 10vw;
 }
-
 .piece::before {
   content: "";
   background: #888;
   width: 1px;
   height: 8vw;
 }
-
 .piece::after {
   content: "";
   border-radius: 100%;
@@ -78,7 +76,6 @@ body {
   width: 2vw;
   height: 2vw;
 }
-
 .piece:first-child {
   -webkit-animation-name: left;
   -webkit-animation-duration: 1s;
@@ -101,7 +98,6 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
 .piece:last-child {
   -webkit-animation-name: right;
   -webkit-animation-duration: 1s;

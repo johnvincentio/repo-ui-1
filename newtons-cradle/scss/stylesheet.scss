@@ -32,38 +32,39 @@ body {
   flex-direction: column;
   width: 2vw;
   height: 10vw;
-}
-.piece::before {
-  content: '';
-  background: #888;
-  width: 1px;
-  height: 8vw;
-}
-.piece::after {
-  content: '';
-  border-radius: 100%;
-  background: white;
-  width: 2vw;
-  height: 2vw;
-}
 
-.piece:first-child {
-  @include animation(
-    left,
-    1s,
-    cubic-bezier(0.215, 0.61, 0.355, 1),
-    infinite,
-    alternate
-  );
-}
-.piece:last-child {
-  @include animation(
-    right,
-    1s,
-    cubic-bezier(0.55, 0.055, 0.675, 0.19),
-    infinite,
-    alternate
-  );
+  &::before {
+    content: '';
+    background: #888;
+    width: 1px;
+    height: 8vw;
+  }
+  &::after {
+    content: '';
+    border-radius: 100%;
+    background: white;
+    width: 2vw;
+    height: 2vw;
+  }
+
+  &:first-child {
+    @include animation(
+      left,
+      1s,
+      cubic-bezier(0.215, 0.61, 0.355, 1),
+      infinite,
+      alternate
+    );
+  }
+  &:last-child {
+    @include animation(
+      right,
+      1s,
+      cubic-bezier(0.55, 0.055, 0.675, 0.19),
+      infinite,
+      alternate
+    );
+  }
 }
 
 @include keyframes(left) {

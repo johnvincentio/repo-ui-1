@@ -8,14 +8,6 @@
   transform: rotate($val);
 }
 
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
-}
-
 @mixin animation($animation, $duration, $timing, $iteration, $direction) {
   -webkit-animation-name: $animation;
   -webkit-animation-duration: $duration;
