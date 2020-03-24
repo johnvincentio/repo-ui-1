@@ -1,3 +1,8 @@
+//
+
+@import 'reset.min';
+@import 'mixins';
+
 html,
 body {
   height: 100%;
@@ -49,71 +54,38 @@ body {
   width: 2vw;
   height: 2vw;
 }
+
 .piece:first-child {
-  -webkit-animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate
-    left;
-  animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left;
+  @include animation(
+    1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate left
+  );
 }
 .piece:last-child {
-  -webkit-animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite
-    alternate right;
-  animation: 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right;
+  @include animation(
+    1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate right
+  );
 }
 
-@-webkit-keyframes left {
+@include keyframes(left) {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    @include rotate(45deg);
   }
 }
 
-@keyframes left {
+@include keyframes(right) {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include rotate(-45deg);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-@-webkit-keyframes right {
-  0% {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-}
-@keyframes right {
-  0% {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include rotate(0deg);
   }
 }
