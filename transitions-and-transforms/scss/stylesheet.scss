@@ -1,7 +1,9 @@
 //
 
 @import 'reset.min';
-// @import 'mixins';
+@import 'mixins';
+
+$move: 250px;
 
 html,
 body {
@@ -17,20 +19,86 @@ body {
 
 .object {
   position: absolute;
-  transition: all 2s ease-in-out;
-  -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-  -moz-transition: all 2s ease-in-out; /** Firefox **/
-  -o-transition: all 2s ease-in-out; /** Opera **/
+  @include transition(all 2s ease-in-out);
 }
 
-.van {
-  top: 45%;
-  left: 44%;
+.van1 {
+  top: 75%;
+  left: 25%;
+}
+
+.van2 {
+  top: 75%;
+  right: 25%;
+}
+
+.rocket {
+  top: 35%;
+  left: 45%;
+}
+
+.coin {
+  top: 65%;
+  left: 45%;
+}
+
+.plane {
+  top: 50%;
+  left: 5%;
+}
+
+.pencil1 {
+  top: 10%;
+  left: 10%;
+}
+
+.pencil2 {
+  top: 10%;
+  right: 10%;
+}
+
+.car {
+  top: 10%;
+  left: 30%;
+}
+
+.boomerang {
+  top: 55%;
+  left: 65%;
 }
 
 #axis:hover .move-right {
-  transform: translate(350px, 0);
-  -webkit-transform: translate(350px, 0); /** Chrome & Safari **/
-  -o-transform: translate(350px, 0); /** Opera **/
-  -moz-transform: translate(350px, 0); /** Firefox **/
+  @include transform(translate($move, 0));
+}
+
+#axis:hover .move-left {
+  @include transform(translate(-$move, 0));
+}
+
+#axis:hover .move-up {
+  @include transform(translate(0, -$move));
+}
+
+#axis:hover .move-down {
+  @include transform(translate(0, $move));
+}
+
+#axis:hover .move-ne {
+  @include transform(translate($move, -$move));
+}
+
+#axis:hover .rotate360cw {
+  @include transform(rotate(360deg));
+}
+
+#axis:hover .rotate360ccw {
+  @include transform(rotate(-360deg));
+}
+
+#axis:hover .larger {
+  @include transform(scale(2));
+}
+
+#axis:hover .multiple-move {
+  @include transform(translate(250px, -250px) rotate(360deg));
 }

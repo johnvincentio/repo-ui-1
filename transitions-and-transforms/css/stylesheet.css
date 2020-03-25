@@ -47,28 +47,128 @@ body {
 
 .object {
   position: absolute;
-  transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;
-  /** Chrome & Safari **/
   -moz-transition: all 2s ease-in-out;
-  /** Firefox **/
+  -ms-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
-  /** Opera **/
+  transition: all 2s ease-in-out;
 }
 
-.van {
-  top: 45%;
-  left: 44%;
+.van1 {
+  top: 75%;
+  left: 25%;
+}
+
+.van2 {
+  top: 75%;
+  right: 25%;
+}
+
+.rocket {
+  top: 35%;
+  left: 45%;
+}
+
+.coin {
+  top: 65%;
+  left: 45%;
+}
+
+.plane {
+  top: 50%;
+  left: 5%;
+}
+
+.pencil1 {
+  top: 10%;
+  left: 10%;
+}
+
+.pencil2 {
+  top: 10%;
+  right: 10%;
+}
+
+.car {
+  top: 10%;
+  left: 30%;
+}
+
+.boomerang {
+  top: 55%;
+  left: 65%;
 }
 
 #axis:hover .move-right {
-  transform: translate(350px, 0);
-  -webkit-transform: translate(350px, 0);
-  /** Chrome & Safari **/
-  -o-transform: translate(350px, 0);
-  /** Opera **/
-  -moz-transform: translate(350px, 0);
-  /** Firefox **/
+  -moz-transform: translate(250px, 0);
+  -o-transform: translate(250px, 0);
+  -ms-transform: translate(250px, 0);
+  -webkit-transform: translate(250px, 0);
+  transform: translate(250px, 0);
+}
+
+#axis:hover .move-left {
+  -moz-transform: translate(-250px, 0);
+  -o-transform: translate(-250px, 0);
+  -ms-transform: translate(-250px, 0);
+  -webkit-transform: translate(-250px, 0);
+  transform: translate(-250px, 0);
+}
+
+#axis:hover .move-up {
+  -moz-transform: translate(0, -250px);
+  -o-transform: translate(0, -250px);
+  -ms-transform: translate(0, -250px);
+  -webkit-transform: translate(0, -250px);
+  transform: translate(0, -250px);
+}
+
+#axis:hover .move-down {
+  -moz-transform: translate(0, 250px);
+  -o-transform: translate(0, 250px);
+  -ms-transform: translate(0, 250px);
+  -webkit-transform: translate(0, 250px);
+  transform: translate(0, 250px);
+}
+
+#axis:hover .move-ne {
+  -moz-transform: translate(250px, -250px);
+  -o-transform: translate(250px, -250px);
+  -ms-transform: translate(250px, -250px);
+  -webkit-transform: translate(250px, -250px);
+  transform: translate(250px, -250px);
+}
+
+#axis:hover .rotate360cw {
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#axis:hover .rotate360ccw {
+  -moz-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
+#axis:hover .larger {
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+#axis:hover .multiple-move {
+  -moz-transform: translate(250px, -250px) rotate(360deg);
+  -o-transform: translate(250px, -250px) rotate(360deg);
+  -ms-transform: translate(250px, -250px) rotate(360deg);
+  -webkit-transform: translate(250px, -250px) rotate(360deg);
+  transform: translate(250px, -250px) rotate(360deg);
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
