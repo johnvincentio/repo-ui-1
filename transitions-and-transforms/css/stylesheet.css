@@ -1,0 +1,74 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.object {
+  position: absolute;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 2s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 2s ease-in-out;
+  /** Opera **/
+}
+
+.van {
+  top: 45%;
+  left: 44%;
+}
+
+#axis:hover .move-right {
+  transform: translate(350px, 0);
+  -webkit-transform: translate(350px, 0);
+  /** Chrome & Safari **/
+  -o-transform: translate(350px, 0);
+  /** Opera **/
+  -moz-transform: translate(350px, 0);
+  /** Firefox **/
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
